@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Drakkar';
-    src: url(../fonts/Drakkar-Regular.otf);
+    src: url(../fonts/Drakkar\ Regular.otf);
     font-weight: 400;
     font-style: normal;
 }
@@ -78,7 +78,7 @@ body{
 
 .intro{
     height: 800px;
-    background: url(../img/svg/kingdom-about.png) no-repeat center;
+    background: url(../images/leraImages/kingdom-about.png) no-repeat center;
     background-size: cover;
     margin-top: 77px;
 }
@@ -88,7 +88,7 @@ body{
 .main{
     height: 3738px;
     width: 100%;
-    background: url("../img/svg/AGED_PAPER\ 2.png");
+    background: url("../images/leraImages/AGED_PAPER\ 2.png");
 }
 
 .content__title{
