@@ -25,7 +25,7 @@ html{
 body{
     font-family: 'Advent Pro ExtraExpanded';
     font-style: normal;
-    font-size: 24px;
+    font-size: 1.6vw;
     line-height: normal;
     font-weight: 400;
     color: #000000;
@@ -94,18 +94,18 @@ body{
 /* Info styles start */
 
 .infoblock{
-    height: 732px;
+    
     width: 100%;
     display: flex;
     
 }
 
 .info{
-    height: 536px;
     margin-left: 10%;
     
     padding-top: 100px;
     width: 55.56%;
+    padding-bottom: 100px;
 }
 
 .infoline-locations{
@@ -116,10 +116,11 @@ body{
     display: flex;
     justify-content: start;
     align-items: center;
+    
 }
 
 .info_locations{
-    font-size: 16px;
+    font-size: 1.1vw;
     font-weight: 500;
     letter-spacing: 2.56;
     text-transform: uppercase;
@@ -135,13 +136,14 @@ body{
 
 .info_region{
     font-family: Drakkar;
-    font-size: 48px;
+    font-size: 3.5vw;
     padding-top: 11px;
 
 }
 
 .infostar{
-    width: 64px;
+    width: 5vw;
+    height: auto;
     
 }
 
@@ -156,9 +158,14 @@ body{
     
     padding-top: 116px;
     width: auto;
-    padding-left: 6.88%;
-    height: auto;
+    padding-right: 5%;
+    height: 40vw;
     padding-bottom: 116px;
+}
+
+.info_pic>img{
+    width: 100%;
+    height: 100%;
 }
 
 /* Info styles end */
