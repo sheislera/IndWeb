@@ -167,6 +167,10 @@ p {
   padding-bottom: 116px;
 }
 
+.info_pic > img {
+  height: auto;
+  max-width: 100%;
+}
 /* Info styles end */
 
 hr {
