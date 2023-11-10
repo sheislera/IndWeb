@@ -54,6 +54,7 @@ p {
 }
 
 .header__wrapper {
+  z-index: 1;
   height: 72px;
   background-color: #26bdbd;
   display: flex;
@@ -83,6 +84,7 @@ p {
 }
 
 .header__img {
+  z-index: -1;
   width: 110%;
   margin-left: -5px;
   margin-top: -20px;
