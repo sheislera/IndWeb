@@ -96,12 +96,7 @@ p {
 
 .intro {
   height: 800px;
-  background: linear-gradient(
-      0deg,
-      rgba(157, 191, 232, 0.09) 0%,
-      rgba(157, 191, 232, 0.09) 100%
-    ),
-    url(../images/мапа/obolon/main.jpg) no-repeat center;
+
   background-size: cover;
 }
 
@@ -141,6 +136,7 @@ p {
 }
 
 .infoblock-stars {
+  padding-top: 1vw;
   display: flex;
   justify-content: start;
   align-items: end;
