@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Королівство темних ельфів</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-header.css">
     <link rel="stylesheet" href="css/style-index.css">
+    <link rel="icon" href="images/leraImages/logo-1.ico" />
+    <link rel="stylesheet" href="css/style-footer.css">
 </head>
+
 <body>
     <header class="header">
-        <div class="header__wrapper">
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a href="#!" class="header__link">Головна</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#!" class="header__link">Про королівство</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#!" class="header__link">Мапа</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#!" class="header__link">Каста</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#!" class="header__link">Про нас</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="header_block">
+            <div class="header__wrapper">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="index.html" class="header__link active">Головна</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="about.html" class="header__link">Про королівство</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Мапа</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Каста</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Про нас</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <img class="header__img" src="images/leraImages//menu_ripped 1.png" alt="Низ меню">
         </div>
-        <img class="header__img" src="images/leraImages//menu_ripped 1.png" alt="Низ меню">
+
     </header>
     <main class="main">
         <section class="intro">
@@ -52,7 +60,9 @@
                 <br>перше століття.
             </p>
             <button class="info__button">
-                Поринути у світ
+                <a href="about.html">
+                    Поринути у світ
+                </a>
             </button>
         </section>
         <section class="bottom">
@@ -62,87 +72,120 @@
                     <h3 class="map__title">
                         Мапа
                     </h3>
-                    <img src="images/leraImages//leaves.svg" alt="Гілка" class="leaves__img">
+                    <img src="images/leraImages//leaves.svg" alt="Гілка" class="leaves__img leaves_right">
                 </div>
-                <img class="map__img" src="images/leraImages//map.png" alt="Мапа">
+                <div class="map" onmouseover="hoverMap()" onmouseout="unhoverMap()">
+                    <img class="map__img" src="images/leraImages//map.png" alt="Мапа">
+                    <div class="hidden_map_elements">
+                        <h2 class="map_head">Мапа</h2>
+                        <button class="map_btn info__button" style="background-color: rgba(38, 189, 189, 0.8);">
+                            <a href="#">До мапи</a></button>
+                    </div>
+                </div>
+
             </section>
             <section class="cards">
-                <img src="images/leraImages//leaves.svg" alt="Гілка" class="cards__img">
-                <h3 class="cards__title">
-                    Каста
-                </h3>
-                <img src="images/leraImages//leaves.svg" alt="Гілка" class="cards__img">
+                <div class="cards__header">
+                    <img src="images/leraImages//leaves.svg" alt="Гілка" class="cards__img">
+                    <h3 class="cards__title">
+                        Каста
+                    </h3>
+                    <img src="images/leraImages//leaves.svg" alt="Гілка" class="cards__img leaves_right">
+                </div>
 
+                <div class="casta">
+                    <div class="container">
+                        <div class="box box-1" style="--img: url(../images/головна/card1.jpg);" data-text="Академіки">
+                        </div>
+                        <div class="box box-2" style="--img: url(../images/головна/card2.jpg);" data-text="Купці"></div>
+                        <div class="box box-3" style="--img: url(../images/головна/card3.jpg);" data-text="Науковці">
+                        </div>
+                        <div class="box box-4" style="--img: url(../images/головна/card4.jpg);"
+                            data-text="Королева Хорн І"></div>
+                        <div class="box box-5" style="--img: url(../images/головна/card5.jpg);" data-text="Рошенократи">
+                        </div>
+                        <div class="box box-6" style="--img: url(../images/головна/card6.jpg);"
+                            data-text="Орден ДраКвірі">
+                        </div>
+                        <div class="box box-7" style="--img: url(../images/головна/card7.jpg);"
+                            data-text="Чебрецеві жерці"></div>
+                    </div>
+                </div>
+                <div class="casta_btn"><a href="#">ДЕТАЛЬНІШЕ</a></div>
             </section>
         </section>
     </main>
-    <img src="images/leraImages//Vector (1).svg" alt="Верхівка футера" class="footer__ripped">
     <footer class="footer">
-        <img class="footer__img" src="images/leraImages//logo 1.svg" alt="Логотип">
-        <nav class="footer__nav1">
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <a href="#!" class="footer__link">Головна</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#!" class="footer__link">Про королівство</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#!" class="footer__link">Мапа</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#!" class="footer__link">Каста</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#!" class="footer__link">Про нас</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="footer__nav2">
-            <ul class="footer__list-map">
-                <li class="footer__item-map">
-                    <a href="#!" id="map__name" class="footer__link">Мапа</a>
-                </li>
-                <li class="footer__item-map">
-                    <a href="#!" class="footer__link">Оболонія</a>
-                </li>
-                <li class="footer__item-map">
-                    <a href="#!" class="footer__link">Землі троєщини</a>
-                </li>
-                <li class="footer__item-map">
-                    <a href="#!" class="footer__link">Срібляні ворота</a>
-                </li>
-                <li class="footer__item-map">
-                    <a href="#!" class="footer__link">Борщівська долина</a>
-                </li>
-                <li class="footer__item-map">
-                    <a href="#!" class="footer__link">Площа ельфійських героїв</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="footer__nav3">
-            <ul class="footer__list-kasta">
-                <li class="footer__item-kasta">
-                    <a href="#!" id="kasta__name" class="footer__link">Каста</a>
-                </li>
-                <li class="footer__item-kasta">
-                    <a href="#!" class="footer__link">Королева Хорн І</a>
-                </li>
-                <li class="footer__item-kasta">
-                    <a href="#!" class="footer__link">Академія ПсаПатронуса</a>
-                </li>
-                <li class="footer__item-kasta">
-                    <a href="#!" class="footer__link">Чебрецеві Жерці</a>
-                </li>
-                <li class="footer__item-kasta">
-                    <a href="#!" class="footer__link">Орден ДраКвірі</a>
-                </li>
-                <li class="footer__item-kasta">
-                    <a href="#!" class="footer__link">Міфодронці</a>
-                </li>
-            </ul>
-        </nav>
-        <img src="images/leraImages//Rectangle 43.png" alt="Касти" class="footer__pic">
+        <img src="images/leraImages//Vector (1).svg" alt="Верхівка футера" class="footer__ripped">
+        <div class="footer_block">
+            <nav class="footer__nav1">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#!" class="footer__link">Головна</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#!" class="footer__link">Про королівство</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#!" class="footer__link">Мапа</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#!" class="footer__link">Каста</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#!" class="footer__link">Про нас</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footer__nav2">
+                <ul class="footer__list-map">
+                    <li class="footer__item-map">
+                        <a href="#!" id="map__name" class="footer__link">Мапа</a>
+                    </li>
+                    <li class="footer__item-map">
+                        <a href="#!" class="footer__link">Оболонія</a>
+                    </li>
+                    <li class="footer__item-map">
+                        <a href="#!" class="footer__link">Землі троєщини</a>
+                    </li>
+                    <li class="footer__item-map">
+                        <a href="#!" class="footer__link">Срібляні ворота</a>
+                    </li>
+                    <li class="footer__item-map">
+                        <a href="#!" class="footer__link">Борщівська долина</a>
+                    </li>
+                    <li class="footer__item-map">
+                        <a href="#!" class="footer__link">Площа ельфійських героїв</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footer__nav3">
+                <ul class="footer__list-kasta">
+                    <li class="footer__item-kasta">
+                        <a href="#!" id="kasta__name" class="footer__link">Каста</a>
+                    </li>
+                    <li class="footer__item-kasta">
+                        <a href="#!" class="footer__link">Королева Хорн І</a>
+                    </li>
+                    <li class="footer__item-kasta">
+                        <a href="#!" class="footer__link">Академія ПсаПатронуса</a>
+                    </li>
+                    <li class="footer__item-kasta">
+                        <a href="#!" class="footer__link">Чебрецеві Жерці</a>
+                    </li>
+                    <li class="footer__item-kasta">
+                        <a href="#!" class="footer__link">Орден ДраКвірі</a>
+                    </li>
+                    <li class="footer__item-kasta">
+                        <a href="#!" class="footer__link">Міфодронці</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="images/leraImages//Rectangle 43.png" alt="Касти" class="footer__pic">
+        </div>
+
     </footer>
 </body>
+<script src="js/index.js"></script>
+
 </html>
