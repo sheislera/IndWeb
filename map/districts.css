@@ -1,0 +1,93 @@
+.map-container {
+  width: 925.33px;
+  height: 960.42px;
+  position: relative;
+}
+
+.map-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.map-item img {
+  filter: brightness(70%);
+}
+
+.map-item:hover img {
+  filter: brightness(100%);
+  transform: translateY(-5px);
+  transition: transform 0.5s ease;
+}
+
+.desna {
+  width: 453.25px;
+  height: 352.37px;
+  left: 472.08px;
+  top: 69.64px;
+}
+.golos {
+  z-index: 5;
+  width: 323.89px;
+  height: 534.83px;
+  left: 299.01px;
+  top: 425.59px;
+}
+.darnitsa {
+  z-index: 5;
+  width: 374.5px;
+  height: 312.98px;
+  left: 545.82px;
+  top: 365.69px;
+}
+.obolon {
+  width: 370.82px;
+  height: 268.81px;
+  left: 105.05px;
+  top: 60.06px;
+}
+.svyatosh {
+  width: 302.01px;
+  height: 366.38px;
+  left: 0px;
+  top: 156.06px;
+}
+.shevch {
+  width: 208.26px;
+  height: 118.29px;
+  left: 250.93px;
+  top: 311.79px;
+}
+.pechersk {
+  width: 95px;
+  height: 131px;
+  left: 438.3px;
+  top: 390.63px;
+}
+.soloma {
+  width: 179.96px;
+  height: 186.56px;
+  left: 253.7px;
+  top: 378.73px;
+}
+.dnipro {
+  width: 340.23px;
+  height: 185.98px;
+  left: 466.51px;
+  top: 297.85px;
+}
+.podol {
+  width: 276.25px;
+  height: 171.57px;
+  left: 203px;
+  top: 211.29px;
+}
+.river {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 353.56px;
+  height: 958.58px;
+  left: 408.47px;
+  top: 0px;
+}
