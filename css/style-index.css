@@ -1,282 +1,343 @@
 @font-face {
-    font-family: 'Advent Pro ExtraExpanded';
-    src: url(../fonts/AdventPro/AdventPro_ExtraExpanded-Regular.ttf);
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Advent Pro ExtraExpanded";
+  src: url(../fonts/AdventPro/AdventPro_ExtraExpanded-Regular.ttf);
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Drakkar';
-    src: url(../fonts/Drakkar\ Regular.otf);
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Drakkar";
+  src: url(../fonts/Drakkar\ Regular.otf);
+  font-weight: 400;
+  font-style: normal;
 }
 
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
-*, *::before, *::after{
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
-
-body{
-    font-family: 'Advent Pro ExtraExpanded';
-    font-style: normal;
-    font-size: 24px;
-    line-height: normal;
-    font-weight: 400;
-    color: #FFF;
+::selection {
+  background-color: black;
+  color: white;
 }
 
-/* Header styles start */
-
-.header{
-    width: 100%;
-    flex-shrink: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3;
+/* Загальні стилі для виділеного тексту для IE */
+::-moz-selection {
+  background-color: black;
+  color: white;
 }
 
-.header__wrapper{
-    height: 72px;
-    background-color: #26BDBD;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+body {
+  font-family: "Advent Pro ExtraExpanded";
+  font-style: normal;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 400;
+  color: #fff;
+  background: url(../images/leraImages/AGED_PAPER\ 1.png) no-repeat center;
+  background-size: cover;
 }
 
-.header__list{
-    display: flex;
-    flex-wrap: wrap;
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
 }
 
-.header__item{
-    margin-right: 40px;
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
 }
 
-.header__link{
-    font-weight: 500;
-    color: #000;
-    text-decoration: none;
+body::-webkit-scrollbar-thumb {
+  background-color: #1b8484;
 }
-.header__link:hover, .header__link:focus, .header__link:active{
-    font-weight: 600;
-}
-
-.header__img{
-    width: 110%;
-    margin-left: -5px;
-    margin-top: -20px;
-}
-
-/* Header styles end */
-
 /* Intro styles start */
 
-.intro{
-    height: 880px;
-    background: url(../images/leraImages/kingdom.png) no-repeat center;
-    background-size: cover;
-    margin-top: 77px;
+.intro {
+  height: 120vh;
+  background: url(../images/leraImages/kingdom.png) no-repeat center;
+  background-size: cover;
+  margin-top: 5%;
 }
 
-.intro__title{
-    padding-top: 400px;
-    padding-left: 57px;
-    font-family: 'Drakkar';
-    font-size: 64px;
-    text-shadow: 1px 0 10px white;
-    margin-bottom: 32px;
+.intro__title {
+  padding-top: 400px;
+  padding-left: 57px;
+  font-family: "Drakkar";
+  font-size: 8vh;
+  text-shadow: 1px 0 8px white;
+  margin-bottom: 32px;
 }
 
-.intro__text{
-    font-size: 32px;
-    font-weight: 500;
-    padding-left: 57px;
+.intro__text {
+  font-size: 4vh;
+  font-weight: 500;
+  padding-left: 57px;
 }
 
 /* Intro styles end */
 
 /* Info styles start */
 
-.info{
-    height: 732px;
-    background: url(../images/leraImages/Vector.png) no-repeat center;
-    background-size: cover;
-    margin-top: -52px;
-    position: relative;
-    z-index: 2;
+.info {
+  height: 732px;
+  background: url(../images/leraImages/Vector.png) no-repeat center;
+  background-size: cover;
+  margin-top: -52px;
+  position: relative;
+  z-index: 2;
 }
 
-.info__title{
-    font-family: Drakkar;
-    font-size: 48px;
-    padding-top: 304px;
-    text-align: center;
-    margin-bottom: 24px;
+.info__title {
+  font-family: Drakkar;
+  font-size: 48px;
+  padding-top: 304px;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
-.info__text{
-    text-align: center;
-    margin-bottom: 40px;
+.info__text {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.info__button{
-    width: 280px;
-    height: 80px;
-    flex-shrink: 0;
-    border-radius: 40px;
-    background: rgba(38, 189, 189, 0.50);
-    box-shadow: 0px 4px 8px 0px rgba(10, 7, 117, 0.40);
-    margin: 0 auto;
-    display: block;
-    font-weight: 700;
-    color: #FFF;
-    font-family: Advent Pro ExtraExpanded;
-    font-size: 24px;
-    font-style: normal;
-    line-height: normal;
+.info__button {
+  width: 280px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: none;
+  background: rgba(38, 189, 189, 0.5);
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.5s ease-out;
 }
 
-.info__button:hover{
-    background: rgb(159 224 224 / 50%);
+.info__button a {
+  font-weight: 700;
+  color: #fff;
+  font-family: Advent Pro ExtraExpanded;
+  font-size: 24px;
+  font-style: normal;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.info__button:hover {
+  background: rgb(159 224 224 / 50%);
+  transform: translateY(-2px) scale(1.05);
 }
 
 /* Info styles end */
 
 /* Bottom styles start */
 
-.bottom{
-    height: 1984px;
-    background: url(../images/leraImages/AGED_PAPER\ 1.png) no-repeat center;
-    background-size: cover;
-    position: relative;
-    top: -50px;
-    z-index: 1;
+.bottom {
+  height: 100%;
+
+  position: relative;
+  top: -50px;
+  z-index: 1;
 }
 
-.map__block{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+.map__block {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
-.leaves__img{
-    width: 39%;
-    height: auto;
-    margin-top: 70px;
+.leaves__img {
+  width: 39%;
+  height: auto;
+  margin-top: 70px;
+}
+.leaves_right {
+  transform: scale(-1, 1);
+}
+.map__title {
+  color: #0a0775;
+  text-align: center;
+  font-family: Drakkar;
+  font-size: 40px;
+  padding-top: 86px;
+  padding-bottom: 86px;
+  margin-bottom: -70px;
 }
 
-.map__title{
-    color: #0A0775;
-    text-align: center;
-    font-family: Drakkar;
-    font-size: 40px;
-    padding-top: 86px;
-    padding-bottom: 86px;
-    margin-bottom: -70px;
+.map {
+  position: relative;
 }
 
-.map__img{
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    display: block;
+.map__img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(100%); /* Затемнення за замовчуванням */
+  transition: filter 0.5s ease; /* Додано транзицію для затемнення */
 }
 
+.hidden_map_elements {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.map_head {
+  font-family: Drakkar;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+.map__img:hover {
+  filter: brightness(70%);
+}
+
+.map__img:hover ~ .hidden_map_elements {
+  opacity: 1;
+  transition: opacity 0.5s ease 0.2s; /* Додано затримку для анімації тексту та кнопки */
+}
+/*Casta styles start*/
 .cards {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.cards__title{
-    color: #0A0775;
-    text-align: center;
-    font-family: Drakkar;
-    font-size: 40px;
+.cards__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
 }
-
-.cards__img{
-    width: 39%;
-    height: auto;
-}
-
-/* Bottom styles end */
-
-/* Footer styles start */
-
-.footer{
-    background: #000000;
-    height: 280px;
-    margin-top: -50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.cards__title {
+  color: #0a0775;
+  text-align: center;
+  font-family: Drakkar;
+  font-size: 40px;
 }
 
-.footer__ripped{
-    width: 100%;
-    overflow: hidden;
+.cards__img {
+  width: 39%;
+  height: auto;
 }
 
-.footer__img{
-    width: 150px;
-    height: 160px;
-    flex-shrink: 0;
-    margin-right: 22px;
+.casta {
+  margin-top: 2vh;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+}
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  width: 95vw;
+  height: 440px;
+  transition: all 400ms;
 }
 
-.footer__list{
-    margin-left: 22px;
+.container:hover .box {
+  filter: brightness(25%);
 }
 
-.footer__item{
-    margin-bottom: 19px;
+.box {
+  position: relative;
+  background: var(--img) center center;
+  background-size: cover;
+  transition: all 200ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Drakkar;
+  font-size: 3vh;
 }
 
-.footer__link{
-    text-decoration: none;
-    color: #FFF;
-    font-family: 'Advent Pro ExtraExpanded';
-    font-size: 16px;
-    font-weight: 400;
+.container .box:hover {
+  filter: grayscale(0%) opacity(100%);
+  cursor: pointer;
 }
 
-.footer__list-map{
-    margin-left: 98px;
+.container:has(.box-1:hover) {
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.footer__item-map{
-    margin-bottom: 11px;
+.container:has(.box-2:hover) {
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-#map__name{
-    font-family: 'Drakkar';
-    font-size: 24px;
-    margin-bottom: 16px;
+.container:has(.box-3:hover) {
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
 }
 
-.footer__list-kasta{
-    margin-left: 103px;
+.container:has(.box-4:hover) {
+  grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
 }
 
-.footer__item-kasta{
-    margin-bottom: 11px;
+.container:has(.box-5:hover) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr;
 }
 
-#kasta__name{
-    font-family: 'Drakkar';
-    font-size: 24px;
-    margin-bottom: 17px;
+.container:has(.box-6:hover) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
 }
 
-.footer__pic{
-    margin-left: 59px;
+.container:has(.box-7:hover) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
 }
 
+.box::after {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 20px;
+  background: #000;
+  color: #fff;
+  padding: 10px 10px 10px 14px;
+  letter-spacing: 4px;
+  transform: translateY(60px);
+  opacity: 0;
+  transition: all 150ms;
+}
 
-/* Footer styles end */
+.box:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 400ms;
+}
+
+.casta_btn {
+  width: 16vw;
+  height: 8vh;
+  margin-top: 4vh;
+  border-radius: 32px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+
+.casta_btn > a {
+  font-weight: 700;
+  color: #fff;
+  font-family: Advent Pro ExtraExpanded;
+  font-size: 3vh;
+  font-style: normal;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.casta_btn:hover {
+  background-color: #1b8484;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+/*Casta styles end*/

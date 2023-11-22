@@ -1,0 +1,81 @@
+/* Footer styles start */
+footer {
+  position: relative;
+}
+
+.footer_block {
+  background: #000000;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.footer__ripped {
+  position: absolute;
+  bottom: 85%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer__img {
+  width: 15%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.footer__list {
+  margin-left: 5%;
+}
+
+.footer__item {
+  margin-bottom: 2%;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Advent Pro ExtraExpanded";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer__list-map {
+  margin-left: 0%;
+  width: 100%;
+}
+
+.footer__item-map {
+  margin-bottom: 6px;
+}
+
+#map__name {
+  font-family: "Drakkar";
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.footer__list-kasta {
+  margin-left: 5%;
+}
+
+.footer__item-kasta {
+  margin-bottom: 6px;
+}
+
+#kasta__name {
+  font-family: "Drakkar";
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer__pic {
+  width: 30%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+/* Footer styles end */
