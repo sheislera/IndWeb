@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Advent Pro ExtraExpanded";
+  src: url(../fonts/AdventPro/AdventPro_ExtraExpanded-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Drakkar";
+  src: url(../fonts/Drakkar\ Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans/OpenSans-VariableFont_wdth\,wght.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+body {
+  background: url(../images/головна/Paper-106-cut.jpg) no-repeat center;
+  background-size: cover;
+  
+}
+
+
+/* Banner styles start */
+
+.banner {
+  height: 55vw;
+
+}
+
+.banner-text {
+  color: #FFF;
+  padding-top: 43vw;
+  text-align: center;
+  /* Header Uppercase */
+  font-family: Drakkar;
+  font-size: 4.44vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/* Intro styles end */
+
+/* Info styles start */
+
+.main-block {
+  
+  display: flex;
+  justify-content: start;
+}
+
+
+
+.gerb-block {
+  width: 15vw;
+  padding-top: 8vw;
+  display: flex;
+  justify-content: end;
+}
+
+.gerb-pic {
+  height: 16vw;
+  width: auto;
+}
+
+
+.info-block {
+  padding-left: 1.67vw;
+
+  padding-top: 8vw;
+  width: 42vw;
+  padding-bottom: 8vw;
+}
+
+.label {
+  color: var(--black, #000);
+
+  font-family: "Open Sans";
+  font-size: 1.67vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.kast-name {
+  color: var(--black, var(--black, #000));
+  text-align: center;
+
+  font-family: Drakkar;
+  font-size: 4.33vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text-label {
+  color: var(--black, #000);
+
+  font-family: Drakkar;
+  font-size: 2.22vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.kast-text {
+  color: var(--black, #000);
+
+  font-family: Advent Pro ExtraExpanded;
+  font-size: 1.67vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.kast_block {
+  width: 41.33vw;
+
+  margin-top: -7vw;
+  
+}
+
+.kast-pic {
+  height: fit-content;
+  width: 100%;
+}
