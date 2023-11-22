@@ -1,0 +1,20 @@
+.map-container {
+  margin-top: 64px;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.map-container svg {
+  width: 65%;
+}
+.map-container svg :not(.river) {
+  filter: brightness(75%);
+}
+.map-container svg :not(.river):hover {
+  filter: brightness(175%);
+  transition: 0.2s ease-out;
+}
+
+.darnitsa {
+  mask-image: url("../images/головна/john-stevenson-athkatla-final-mid.jpg");
+}
