@@ -1,3 +1,46 @@
+@font-face {
+  font-family: "Advent Pro ExtraExpanded";
+  src: url(../fonts/AdventPro/AdventPro_ExtraExpanded-Regular.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Drakkar";
+  src: url(../fonts/Drakkar\ Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+::selection {
+  background-color: black;
+  color: white;
+}
+
+/* Загальні стилі для виділеного тексту для IE */
+::-moz-selection {
+  background-color: black;
+  color: white;
+}
+
+body {
+  font-family: "Advent Pro ExtraExpanded";
+  font-style: normal;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 400;
+  color: #fff;
+  background: url(../images/leraImages/AGED_PAPER\ 1.png) no-repeat center;
+  background-size: cover;
+}
 .map-container {
   margin-top: 64px;
   max-height: 100%;
