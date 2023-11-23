@@ -12,40 +12,26 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Open Sans";
-  src: url(../fonts/OpenSans/OpenSans-VariableFont_wdth\,wght.ttf);
-  font-weight: 300;
-  font-style: normal;
-}
-
 
 
 body {
   background: url(../images/головна/Paper-106-cut.jpg) no-repeat center;
   background-size: cover;
-  
+
 }
+
+
+/* Header styles start */
+
+
+/* Header styles end */
 
 
 /* Banner styles start */
 
 .banner {
-  height: 55vw;
 
-}
-
-.banner-text {
-  color: #FFF;
-  padding-top: 43vw;
-  text-align: center;
-  /* Header Uppercase */
-  font-family: Drakkar;
-  font-size: 4.44vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
+  display: none;
 }
 
 /* Intro styles end */
@@ -53,39 +39,29 @@ body {
 /* Info styles start */
 
 .main-block {
-  
-  display: flex;
-  justify-content: start;
+  display: grid;
 }
 
 
 
 .gerb-block {
-  width: 15vw;
-  padding-top: 8vw;
-  display: flex;
-  justify-content: end;
+
+  display: none;
 }
 
-.gerb-pic {
-  height: 16vw;
-  width: auto;
-}
+.kast_name {
+  padding-top: 100px;
+  margin-left: 27px;
+  margin-right: 27px;
 
-
-.info-block {
-  padding-left: 1.67vw;
-
-  padding-top: 8vw;
-  width: 42vw;
-  padding-bottom: 8vw;
+  grid-area: 1 / 1;
 }
 
 .label {
   color: var(--black, #000);
 
-  font-family: "Open Sans";
-  font-size: 1.67vw;
+  font-family: "Advent Pro ExtraExpanded";
+  font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -93,31 +69,48 @@ body {
 }
 
 .kast-name {
-  color: var(--black, var(--black, #000));
-  text-align: center;
+  color: var(--black, #000);
 
-  font-family: Drakkar;
-  font-size: 4.33vw;
+  font-family: "Drakkar";
+  font-size: 32px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: normal;
 }
 
+
+.info-block {
+  margin-left: 8px;
+  margin-right: 8px;
+
+  padding-bottom: 24px;
+
+  grid-area: 3 / 1;
+}
+
+
+
 .text-label {
+  padding-left: 12px;
+  padding-top: 8px;
+
+
   color: var(--black, #000);
 
-  font-family: Drakkar;
-  font-size: 2.22vw;
+  font-family: "Drakkar";
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 .kast-text {
+  padding-top: 8px;
   color: var(--black, #000);
 
-  font-family: Advent Pro ExtraExpanded;
-  font-size: 1.67vw;
+  text-align: justify;
+  font-family: "Advent Pro ExtraExpanded";
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -125,13 +118,302 @@ body {
 
 
 .kast_block {
-  width: 41.33vw;
+  padding-top: 24px;
 
-  margin-top: -7vw;
-  
+
+  justify-self: center;
+  grid-area: 2 / 1;
 }
 
 .kast-pic {
-  height: fit-content;
-  width: 100%;
+  height: 406px;
+  width: auto;
+}
+
+/* Info styles start */
+
+/* Footer styles start */
+
+/* Footer styles end */
+
+/* ---------------ПЛАНШЕТ--------------- */
+@media (min-width: 390px) {
+
+  /* Header styles start */
+
+
+  /* Header styles end */
+
+
+  /* Banner styles start */
+
+  .banner {
+    height: 464px;
+
+    display: flex;
+
+    align-items: end;
+  }
+
+  .banner-text {
+
+    padding-bottom: 49px;
+
+    color: #FFF;
+
+    font-family: "Drakkar";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  /* Intro styles end */
+
+  /* Info styles start */
+
+  .main-block {
+    display: grid;
+  }
+
+  .kast_name {
+    width: 55vw;
+    padding-top: 40px;
+    margin-left: 40px;
+    margin-right: 0px;
+
+    grid-area: 1 / 1;
+  }
+
+  .label {
+    color: var(--black, #000);
+
+    font-family: "Advent Pro ExtraExpanded";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .kast-name {
+    color: var(--black, #000);
+
+    font-family: "Drakkar";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+  .info-block {
+    margin-left: 5vw;
+    margin-right: 0px;
+
+    padding-bottom: 64px;
+
+    width: 55vw;
+
+    grid-area: 2 / 1;
+  }
+
+
+
+  .text-label {
+    padding-left: 0px;
+    padding-top: 16px;
+
+
+    color: var(--black, #000);
+
+    font-family: "Drakkar";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .kast-text {
+    padding-top: 16px;
+    color: var(--black, #000);
+
+    text-align: start;
+    font-family: "Advent Pro ExtraExpanded";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+  .kast_block {
+    margin-top: -54px;
+
+
+    justify-self: start;
+    grid-area: span 2 / 2;
+  }
+
+  .kast-pic {
+    height: auto;
+    width: 39vw;
+  }
+
+  /* Info styles start */
+
+  /* Footer styles start */
+
+  /* Footer styles end */
+}
+
+/* ---------------КОМП--------------- */
+@media (min-width: 834px) {
+  /* Header styles start */
+
+
+  /* Header styles end */
+
+
+  /* Banner styles start */
+
+  .banner {
+    height: 800px;
+
+    display: flex;
+
+    align-items: end;
+  }
+
+  .banner-text {
+
+    padding-bottom: 112px;
+
+    color: #FFF;
+
+    font-family: "Drakkar";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  /* Intro styles end */
+
+  /* Info styles start */
+
+  .main-block {
+    display: grid;
+  }
+
+
+
+  .gerb-block {
+    padding-top: 117px;
+    padding-right: 24px;
+    padding-left: 8vw;
+    display: block;
+
+    grid-area: span 2 /1;
+  }
+
+  .gerb-pic {
+    height: 15vw;
+    width: auto;
+  }
+
+
+  .kast_name {
+    width: auto;
+    padding-top: 117px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    grid-area: 1 / 2;
+  }
+
+  .label {
+    color: var(--black, #000);
+
+    font-family: "Advent Pro ExtraExpanded";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .kast-name {
+    color: var(--black, #000);
+
+    font-family: "Drakkar";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+  .info-block {
+    margin-left: 0px;
+    margin-right: 0px;
+
+    padding-bottom: 64px;
+
+    width: auto;
+
+    grid-area: 2 / 2;
+  }
+
+
+
+  .text-label {
+    padding-left: 0px;
+    padding-top: 24px;
+
+
+    color: var(--black, #000);
+
+    font-family: "Drakkar";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .kast-text {
+    padding-top: 24px;
+    color: var(--black, #000);
+
+    text-align: start;
+    font-family: "Advent Pro ExtraExpanded";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+  .kast_block {
+    margin-top: -94px;
+
+
+    justify-self: start;
+    grid-area: span 2 / 3;
+  }
+
+  .kast-pic {
+    height: auto;
+    width: 40vw;
+  }
+
+  /* Info styles start */
+
+  /* Footer styles start */
+
+  /* Footer styles end */
 }
