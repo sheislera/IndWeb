@@ -52,14 +52,98 @@ body {
 }
 .map-container svg :not(.river) {
   filter: brightness(75%);
-  stroke: red;
-  stroke-width: 15px;
 }
 .map-container svg :not(.river):hover {
-  filter: brightness(175%);
-  transition: 0.2s ease-out;
+  /* filter: brightness(175%);
+  transition: 0.2s ease-out; */
+  stroke: url(#linear);
+  animation: rotateGradient 2s linear forwards;
+  animation-iteration-count: infinite;
+  stroke-width: 5px;
 }
-
-.darnitsa {
-  mask-image: url("../images/головна/john-stevenson-athkatla-final-mid.jpg");
+@keyframes rotateGradient {
+  0% {
+    filter: brightness(175%);
+    stroke: url(#linear1);
+  }
+  5% {
+    filter: brightness(175%);
+    stroke: url(#linear2);
+  }
+  10% {
+    filter: brightness(175%);
+    stroke: url(#linear3);
+  }
+  15% {
+    filter: brightness(175%);
+    stroke: url(#linear4);
+  }
+  20% {
+    filter: brightness(175%);
+    stroke: url(#linear5);
+  }
+  25% {
+    filter: brightness(175%);
+    stroke: url(#linear6);
+  }
+  30% {
+    filter: brightness(175%);
+    stroke: url(#linear7);
+  }
+  35% {
+    filter: brightness(175%);
+    stroke: url(#linear8);
+  }
+  40% {
+    filter: brightness(175%);
+    stroke: url(#linear9);
+  }
+  45% {
+    filter: brightness(175%);
+    stroke: url(#linear10);
+  }
+  50% {
+    filter: brightness(175%);
+    stroke: url(#linear11);
+  }
+  55% {
+    filter: brightness(175%);
+    stroke: url(#linear12);
+  }
+  60% {
+    filter: brightness(175%);
+    stroke: url(#linear13);
+  }
+  65% {
+    filter: brightness(175%);
+    stroke: url(#linear14);
+  }
+  70% {
+    filter: brightness(175%);
+    stroke: url(#linear15);
+  }
+  75% {
+    filter: brightness(175%);
+    stroke: url(#linear16);
+  }
+  80% {
+    filter: brightness(175%);
+    stroke: url(#linear17);
+  }
+  85% {
+    filter: brightness(175%);
+    stroke: url(#linear18);
+  }
+  90% {
+    filter: brightness(175%);
+    stroke: url(#linear19);
+  }
+  95% {
+    filter: brightness(175%);
+    stroke: url(#linear20);
+  }
+  100% {
+    filter: brightness(175%);
+    stroke: url(#linear);
+  }
 }
