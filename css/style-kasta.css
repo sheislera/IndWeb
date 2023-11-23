@@ -151,7 +151,7 @@ body {
     height: 464px;
 
     display: flex;
-
+    justify-content: center;
     align-items: end;
   }
 
@@ -283,7 +283,7 @@ body {
     height: 800px;
 
     display: flex;
-
+    justify-content: center;
     align-items: end;
   }
 
