@@ -52,6 +52,8 @@ body {
 }
 .map-container svg :not(.river) {
   filter: brightness(75%);
+  stroke: red;
+  stroke-width: 15px;
 }
 .map-container svg :not(.river):hover {
   filter: brightness(175%);
