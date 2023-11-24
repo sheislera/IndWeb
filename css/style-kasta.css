@@ -72,7 +72,7 @@ body {
   color: var(--black, #000);
 
   font-family: "Drakkar";
-  font-size: 32px;
+  font-size: 8.2vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -162,7 +162,7 @@ body {
     color: #FFF;
 
     font-family: "Drakkar";
-    font-size: 35px;
+    font-size: 4.2vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -181,7 +181,7 @@ body {
   .kast_name {
     width: 55vw;
     padding-top: 40px;
-    margin-left: 40px;
+    margin-left: 5vw;
     margin-right: 0px;
 
     grid-area: 1 / 1;
@@ -202,7 +202,7 @@ body {
     color: var(--black, #000);
 
     font-family: "Drakkar";
-    font-size: 48px;
+    font-size: 5.7vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -259,7 +259,7 @@ body {
 
   .kast-pic {
     height: auto;
-    width: 39vw;
+    width: 38vw;
   }
 
   /* Info styles start */
@@ -294,7 +294,7 @@ body {
     color: #FFF;
 
     font-family: "Drakkar";
-    font-size: 64px;
+    font-size: 4.4vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -351,7 +351,7 @@ body {
     color: var(--black, #000);
 
     font-family: "Drakkar";
-    font-size: 64px;
+    font-size: 4.4vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
