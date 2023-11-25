@@ -25,12 +25,12 @@ body {
 
 .main {
   display: grid;
+  padding-top: 90px;
   padding-bottom: 24px;
 }
 
 .kast-text-block {
   justify-self: center;
-  padding-top: 80px;
 }
 
 .kast-text {
@@ -159,7 +159,7 @@ body {
 /* Footer styles end */
 
 /* ---------------ПЛАНШЕТ--------------- */
-@media (min-width: 390px) and (max-width: 1024px) {
+@media (min-width: 390px) {
   /* Header styles start */
 
   /* Header styles end */
@@ -168,12 +168,13 @@ body {
 
   .main {
     display: grid;
-    padding-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 25px;
   }
 
   .kast-text-block {
     justify-self: center;
-    padding-top: 80px;
+    
   }
 
   .kast-text {
@@ -324,7 +325,7 @@ body {
   .main {
     display: grid;
     padding-bottom: 89px;
-    padding-top: 59px;
+    padding-top: 131px;
   }
 
   .kast-text-block {

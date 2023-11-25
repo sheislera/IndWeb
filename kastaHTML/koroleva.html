@@ -4,19 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=100%, initial-scale=1.0">
-    <title>Королева Хорн І</title>
+    <title>Королева Хорн i</title>
     <link rel="icon" href="../images/leraImages/logo-1.ico" />
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style-base.css">
     <link rel="stylesheet" href="../css/style-header.css">
     <link rel="stylesheet" href="../css/style-scrollbar.css">
     <link rel="stylesheet" href="../css/style-footer.css">
-    
+    <link rel="icon" href="../images/leraImages/logo-1.ico" />
     <link rel="stylesheet" href="../css/style-kasta.css">
+    <script src="../js/header.js"></script>
+    <style>
+        .burger-menu-btn span {
+            background-color: black;
+        }
 
+        .burger-menu-btn-close span {
+            background-color: black;
+        }
+
+        .burger-menu-btn-open span {
+            background-color: black;
+        }
+    </style>
 </head>
 
 <body>
+
+    <header class="header">
+
+        <div class="header_block">
+
+            <div class="header__wrapper" id="header-wrapper">
+                <div class="burger-menu-btn" id="burgerBtn" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list" id="header-list">
+                        <li class="header__item">
+                            <a href="../index.html" class="header__link ">Головна</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="../about.html" class="header__link">Про королiвство</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="../map.html" class="header__link">Мапа</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="../casta.html" class="header__link active">Каста</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="../pro_nas.html" class="header__link">Про нас</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <img class="header__img" src="../images/leraImages//menu_ripped 1.png" alt="Низ меню">
+        </div>
+
+    </header>
+    
+
+    
 
 
     <main class="main">
@@ -26,11 +77,11 @@
              rgba(0, 0, 0, 0.15) 0%,
              rgba(0, 0, 0, 0.60) 100%
           ),
-          url(../images/касти/queenhorny/banner.jpg) no-repeat center;
+          url(../images/касти/queenhorny/banner.jpg) no-repeat top;
           background-size: cover;">
             <div>
                 <h1 class="banner-text">
-                    Королева Хорн І
+                    Королева Хорн i
                 </h1>
             </div>
         </section>
@@ -46,7 +97,7 @@
             <div class="kast_name">
 
                 <h3 class="label">
-                    ЇЇ темність та жорстокість
+                    ЇЇ темнiсть та жорстокiсть
                 </h3>
 
                 <h1 class="kast-name">
@@ -62,35 +113,35 @@
                 </h2>
 
                 <p class="kast-text">
-                    Напівпавучиха, Демонесса, темна ельфійка та напівбогиня. Хорн може приймати будь-який вигляд, проте
-                    найчастіше це образ Чорної Вдови, адже павук – священна для неї тварина. Вона надзвичайно розумна і
-                    хитра, ненавидить світлих ельфів та їх богів.
-                    <br>Чарівним здібностям королеви може позаздрити кожен – адже вона присвятила більшу частину свого
+                    Напiвпавучиха, Демонесса, темна ельфiйка та напiвбогиня. Хорн може приймати будь-який вигляд, проте
+                    найчастiше це образ Чорної Вдови, адже павук – священна для неї тварина. Вона надзвичайно розумна i
+                    хитра, ненавидить свiтлих ельфiв та їх богiв.
+                    <br>Чарiвним здiбностям королеви може позаздрити кожен – адже вона присвятила бiльшу частину свого
                     життя
-                    пошуку первозданних джерел магії, і черпає свої сили з невідомих іншим, або заборонених джерел.
+                    пошуку первозданних джерел магiї, i черпає свої сили з невiдомих iншим, або заборонених джерел.
 
 
                 </p>
 
                 <h2 class="text-label">
-                    Iсторія
+                    Iсторiя
                 </h2>
 
                 <p class="kast-text">
-                    Колись давно, коли темних ельфів ще не існувало, лідером ельфів був Кореллон Ларетіан, в якому текла
-                    первісна кров стародавніх ельфів. В нього була дружина – Ллос, дитина богині Павучихи та Ельфа.
-                    <br>В той час, ельфи жили в злагоді з Богами, але не з владою. Політика Кореллона була абсурдною і
-                    жорстокою, тож невдоволення зросталло з кожним днем. Не погоджувалась з наказами лідера ельфі і його
-                    дружина, тож згодом вона зібрала своїх спільників і оголосила своєму чоловіку війну.
-                    <br>Тривала ця війна тисячоліттями, і хоча спільників у Ллос було багато – вони програли. Боги, яких
-                    Кореллон систематично задобрював і підкупав, відправили Ллос у вигнання на дикі землі, а її та всіх
-                    її послідовувачів прокляли, зробили ельфами-демонами, тобто темними ельфами.
-                    <br>Неймовірно зла на світлих Богів, Ллос відреклась від свого імені, щоб нічого її більше не
-                    пов’язувало з минулим. З того моменту вона стала Хорн 1 Арахнодемоніус, і заснувала своє королівство
-                    темних ельфів – Міфодроніум.
-                    <br>Проживає вона на землях Файнофанії, в Палаці Темряви, будівництво якого тривало понад 250 років.
+                    Колись давно, коли темних ельфiв ще не iснувало, лiдером ельфiв був Кореллон Ларетiан, в якому текла
+                    первiсна кров стародавнiх ельфiв. В нього була дружина – Ллос, дитина богинi Павучихи та Ельфа.
+                    <br>В той час, ельфи жили в злагодi з Богами, але не з владою. Полiтика Кореллона була абсурдною i
+                    жорстокою, тож невдоволення зросталло з кожним днем. Не погоджувалась з наказами лiдера ельфi i його
+                    дружина, тож згодом вона зiбрала своїх спiльникiв i оголосила своєму чоловiку вiйну.
+                    <br>Тривала ця вiйна тисячолiттями, i хоча спiльникiв у Ллос було багато – вони програли. Боги, яких
+                    Кореллон систематично задобрював i пiдкупав, вiдправили Ллос у вигнання на дикi землi, а її та всiх
+                    її послiдовувачiв прокляли, зробили ельфами-демонами, тобто темними ельфами.
+                    <br>Неймовiрно зла на свiтлих Богiв, Ллос вiдреклась вiд свого iменi, щоб нiчого її бiльше не
+                    пов’язувало з минулим. З того моменту вона стала Хорн 1 Арахнодемонiус, i заснувала своє королiвство
+                    темних ельфiв – Мiфодронiум.
+                    <br>Проживає вона на землях Файнофанiї, в Палацi Темряви, будiвництво якого тривало понад 250 рокiв.
                     Для
-                    обслуговування палацу, там щоденно трудиться понад 1000 ельфів.
+                    обслуговування палацу, там щоденно трудиться понад 1000 ельфiв.
 
                 </p>
 
@@ -102,6 +153,94 @@
 
         </section>
     </main>
+
+
+    <footer class="footer">
+        <img src="../images/leraImages//Vector (1).svg" alt="Верхiвка футера" class="footer__ripped">
+        <div class="footer_block">
+            <nav class="footer__nav1">
+                <ul class="footer__list">
+                    <div class="footer__list__div123">
+                        <div class="footer__list__div1">
+                            <li class="footer__item">
+                                <a href="../index.html" class="footer__link">Головна</a>
+                            </li>
+                        </div>
+                        <div class="footer__list__div2">
+                            <li class="footer__item">
+                                <a href="../map.html" class="footer__link">Мапа</a>
+                            </li>
+                        </div>
+                        <div class="footer__list__div3">
+                            <li class="footer__item">
+                                <a href="../pro_nas.html" class="footer__link">Про нас</a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="footer__list__div45">
+                        <div class="footer__list__div4">
+                            <li class="footer__item">
+                                <a href="../about.html" class="footer__link">Про королiвство</a>
+                            </li>
+                        </div>
+                        <div class="footer__list__div5">
+                            <li class="footer__item">
+                                <a href="../casta.html" class="footer__link">Касти</a>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+            <div class="footer__nav23">
+                <nav class="footer__nav2">
+                    <ul class="footer__list-map">
+                        <li class="footer__item-map">
+                            <a href="../map.html" id="map__name" class="footer__link">Мапа</a>
+                        </li>
+                        <li class="footer__item-map">
+                            <a href="../regionsHTML/obolonia.html" class="footer__link">Оболонiя</a>
+                        </li>
+                        <li class="footer__item-map">
+                            <a href="../regionsHTML/troya.html" class="footer__link">Землi Троєщини</a>
+                        </li>
+                        <li class="footer__item-map">
+                            <a href="../regionsHTML/sribnopodil.html" class="footer__link">Срiбноподiльськi Ворота</a>
+                        </li>
+                        <li class="footer__item-map">
+                            <a href="../regionsHTML/borshchivska.html" class="footer__link">Борщiвська Долина</a>
+                        </li>
+                        <li class="footer__item-map">
+                            <a href="../regionsHTML/pechery.html" class="footer__link">Печери Ельфiйських Героїв</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="footer__nav3">
+                    <ul class="footer__list-kasta">
+                        <li class="footer__item-kasta">
+                            <a href="../casta.html" id="kasta__name" class="footer__link">Касти</a>
+                        </li>
+                        <li class="footer__item-kasta">
+                            <a href="../kastaHTML/koroleva.html" class="footer__link">Королева Хорн I</a>
+                        </li>
+                        <li class="footer__item-kasta">
+                            <a href="../kastaHTML/akademiky.html" class="footer__link">Академiки ПсаПатронуса</a>
+                        </li>
+                        <li class="footer__item-kasta">
+                            <a href="../kastaHTML/chebretsevi.html" class="footer__link">Чебрецевi Жерцi</a>
+                        </li>
+                        <li class="footer__item-kasta">
+                            <a href="../kastaHTML/orden.html" class="footer__link">Орден ДраКвiрi</a>
+                        </li>
+                        <li class="footer__item-kasta">
+                            <a href="../kastaHTML/mifodrontsi.html" class="footer__link">Мiфодронцi</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="../images/leraImages//Rectangle 43.png" alt="Касти" class="footer__pic">
+        </div>
+    </footer>
 
 
 </body>

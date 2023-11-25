@@ -23,14 +23,12 @@ body {
 
 /* Header styles end */
 
-
 /* Main styles start */
 
 .main {
   padding-top: 100px;
   padding-bottom: 24px;
 }
-
 
 .us_block {
   display: grid;
@@ -62,15 +60,12 @@ body {
 
 .pic_block {
   padding-top: 24px;
-
 }
 
 .pic {
   height: 90vw;
   width: auto;
 }
-
-.title_block {}
 
 .role_block {
   display: flex;
@@ -111,7 +106,6 @@ body {
 
 .tasks_block {
   padding-top: 34px;
-
 }
 
 .done {
@@ -126,7 +120,6 @@ body {
 
 .list {
   padding-top: 18px;
-
 
   color: black;
 
@@ -179,7 +172,6 @@ body {
   grid-area: 3 / 1;
 }
 
-
 .pic_grid_2 {
   grid-area: 4 / 1;
 }
@@ -191,7 +183,6 @@ body {
 .tasks_grid_2 {
   grid-area: 6 / 1;
 }
-
 
 .pic_grid_3 {
   grid-area: 7 / 1;
@@ -205,7 +196,6 @@ body {
   grid-area: 9 / 1;
 }
 
-
 .pic_grid_4 {
   grid-area: 10 / 1;
 }
@@ -218,7 +208,6 @@ body {
   grid-area: 12 / 1;
 }
 
-
 /* Main styles end */
 
 /* Footer styles start */
@@ -226,11 +215,10 @@ body {
 /* Footer styles end */
 
 /* ---------------ПЛАНШЕТ--------------- */
-@media (min-width: 390px) and (max-width: 1024px) {
+@media (min-width: 390px) {
   /* Header styles start */
 
   /* Header styles end */
-
 
   /* Main styles start */
 
@@ -238,8 +226,6 @@ body {
     padding-top: 80px;
     padding-bottom: 40px;
   }
-
-
 
   .us_block {
     display: grid;
@@ -281,7 +267,6 @@ body {
   }
 
   .title_block {
-    
     width: 35.97vw;
   }
 
@@ -295,7 +280,6 @@ body {
     padding-left: 5px;
     padding-right: 5px;
 
-
     height: 20px;
 
     margin-left: 5px;
@@ -304,7 +288,6 @@ body {
 
   .line_block {
     width: 12px;
-    
   }
 
   .line {
@@ -323,7 +306,6 @@ body {
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
-
   }
 
   .name {
@@ -335,9 +317,7 @@ body {
     font-weight: 550;
     line-height: normal;
 
-    
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-
   }
 
   .tasks_block {
@@ -357,7 +337,6 @@ body {
 
   .list {
     padding-top: 18px;
-
 
     color: black;
 
@@ -400,7 +379,6 @@ body {
 
   .pic_grid_1 {
     grid-area: 1 / 1;
-    
   }
 
   .title_grid_1 {
@@ -411,7 +389,6 @@ body {
   .tasks_grid_1 {
     grid-area: 2 / 1;
   }
-
 
   .pic_grid_2 {
     grid-area: 1 / 2;
@@ -426,7 +403,6 @@ body {
     grid-area: 2 / 2;
   }
 
-
   .pic_grid_3 {
     grid-area: 3 / 1;
   }
@@ -439,7 +415,6 @@ body {
   .tasks_grid_3 {
     grid-area: 4 / 1;
   }
-
 
   .pic_grid_4 {
     grid-area: 3 / 2;
@@ -461,13 +436,11 @@ body {
   /* Footer styles end */
 }
 
-
 /* ---------------КОМП--------------- */
 @media (min-width: 1024px) {
   /* Header styles start */
 
   /* Header styles end */
-
 
   /* Main styles start */
 
@@ -476,10 +449,9 @@ body {
     padding-bottom: 40px;
   }
 
-
-
   .us_block {
     display: grid;
+    padding-top: 100px;
     justify-content: center;
     justify-items: center;
   }
@@ -520,7 +492,6 @@ body {
   }
 
   .title_block {
-    
     width: auto;
   }
 
@@ -553,8 +524,6 @@ body {
     text-transform: uppercase;
 
     background: none;
-
-
   }
 
   .name {
@@ -569,8 +538,6 @@ body {
     line-height: normal;
 
     background: none;
-
-
   }
 
   .tasks_block {
@@ -590,7 +557,6 @@ body {
 
   .list {
     padding-top: 20px;
-
 
     color: black;
 
@@ -632,12 +598,10 @@ body {
     display: grid;
     justify-content: space-between;
     justify-items: stretch;
-
-    
   }
 
   .pic_grid_1 {
-    grid-area: 1 / 2 / 3 / 3 ;
+    grid-area: 1 / 2 / 3 / 3;
     margin-top: -64px;
     justify-content: end;
     align-self: center;
@@ -645,23 +609,19 @@ body {
   }
 
   .title_grid_1 {
-    grid-area: 1 / 1 / 2 / 2 ;
+    grid-area: 1 / 1 / 2 / 2;
     align-self: end;
     justify-content: start;
-
-    
   }
 
   .tasks_grid_1 {
-    grid-area: 2 / 1 / 3 / 2 ;
+    grid-area: 2 / 1 / 3 / 2;
     justify-content: start;
     margin-bottom: 120px;
   }
 
-
   .pic_grid_2 {
-    
-    grid-area: 3 / 1 / 5 / 2 ;
+    grid-area: 3 / 1 / 5 / 2;
     justify-content: start;
     align-self: center;
 
@@ -669,20 +629,18 @@ body {
   }
 
   .title_grid_2 {
-    
-    grid-area: 3 / 2 / 4 / 3 ;
+    grid-area: 3 / 2 / 4 / 3;
     align-self: end;
   }
 
   .tasks_grid_2 {
-    grid-area: 4 / 2 / 5 / 3 ;
+    grid-area: 4 / 2 / 5 / 3;
 
     margin-bottom: 120px;
   }
 
-
   .pic_grid_3 {
-    grid-area: 5 / 2 / 7 / 3 ;
+    grid-area: 5 / 2 / 7 / 3;
     justify-content: end;
     align-self: center;
 
@@ -690,19 +648,18 @@ body {
   }
 
   .title_grid_3 {
-    grid-area: 5 / 1 / 6 / 2 ;
+    grid-area: 5 / 1 / 6 / 2;
     align-self: end;
   }
 
   .tasks_grid_3 {
-    grid-area: 6 / 1 / 7 / 2 ;
+    grid-area: 6 / 1 / 7 / 2;
 
     margin-bottom: 120px;
   }
 
-
   .pic_grid_4 {
-    grid-area: 7 / 1 / 9 / 2 ;
+    grid-area: 7 / 1 / 9 / 2;
     justify-content: start;
     align-self: center;
 
@@ -710,12 +667,12 @@ body {
   }
 
   .title_grid_4 {
-    grid-area: 7 / 2 / 8 / 3 ;
+    grid-area: 7 / 2 / 8 / 3;
     align-self: end;
   }
 
   .tasks_grid_4 {
-    grid-area: 8 / 2 / 9 / 3 ;
+    grid-area: 8 / 2 / 9 / 3;
 
     margin-bottom: 62px;
   }
