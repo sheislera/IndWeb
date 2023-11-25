@@ -32,6 +32,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: "Advent Pro ExtraExpanded";
   font-style: normal;
   font-size: 24px;
