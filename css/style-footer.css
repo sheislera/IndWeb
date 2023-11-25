@@ -112,7 +112,7 @@ footer {
 /* Footer styles end */
 
 /* ---------------ПЛАНШЕТ--------------- */
-@media (min-width: 390px) {
+@media (min-width: 390px) and (max-width: 1024px) {
   .footer__ripped {
     margin-top: -3px;
     margin-bottom: -11px;
@@ -161,7 +161,7 @@ footer {
 }
 
 /* ---------------КОМП--------------- */
-@media (min-width: 834px) {
+@media (min-width: 1024px) {
   .footer {
     margin-top: 0px;
   }
