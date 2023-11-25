@@ -21,7 +21,6 @@ body {
 
 /* Header styles end */
 
-
 /* Main styles start */
 
 .main {
@@ -46,15 +45,23 @@ body {
 }
 
 .cards {
-
   display: grid;
   justify-content: space-evenly;
 }
 
-
 .card {
   border-radius: 8px;
-  background: var(--hover_card, linear-gradient(180deg, rgba(157, 191, 232, 0.40) 0%, rgba(157, 191, 232, 0.16) 0.01%, rgba(157, 191, 232, 0.40) 100%), url(../images/касти/card.png), lightgray 50% / cover no-repeat);
+  background: var(
+    --hover_card,
+    linear-gradient(
+      180deg,
+      rgba(157, 191, 232, 0.4) 0%,
+      rgba(157, 191, 232, 0.16) 0.01%,
+      rgba(157, 191, 232, 0.4) 100%
+    ),
+    url(../images/касти/card.png),
+    lightgray 50% / cover no-repeat
+  );
 
   height: 41vw;
   width: 31.7vw;
@@ -108,18 +115,15 @@ body {
   grid-area: 5/2;
 }
 
-
 .text_block {
   grid-area: 2/1;
 
   width: 100%;
   display: grid;
   justify-content: center;
-
 }
 
-.text_block>h3 {
-
+.text_block > h3 {
   color: white;
 
   font-family: "Drakkar";
@@ -129,7 +133,6 @@ body {
   line-height: normal;
   text-align: center;
 }
-
 
 .card_img {
   grid-area: 1/1;
@@ -142,8 +145,7 @@ body {
   overflow: hidden;
 }
 
-.card_img>img {
-
+.card_img > img {
   height: 100%;
   /* Задайте висоту картинки на 100% блоку .card_img */
   width: auto;
@@ -161,7 +163,6 @@ body {
   /* Header styles start */
 
   /* Header styles end */
-
 
   /* Main styles start */
 
@@ -187,17 +188,26 @@ body {
   }
 
   .cards {
-
     display: grid;
 
     justify-content: space-evenly;
     justify-items: center;
   }
 
-
   .card {
     border-radius: 8px;
-    background: var(--hover_card, linear-gradient(180deg, rgba(157, 191, 232, 0.40) 0%, rgba(157, 191, 232, 0.16) 0.01%, rgba(157, 191, 232, 0.40) 100%), url(../images/касти/card.png), lightgray 50% / cover no-repeat);
+    position: relative;
+    background: var(
+      --hover_card,
+      linear-gradient(
+        180deg,
+        rgba(157, 191, 232, 0.4) 0%,
+        rgba(157, 191, 232, 0.16) 0.01%,
+        rgba(157, 191, 232, 0.4) 100%
+      ),
+      url(../images/касти/card.png),
+      lightgray 50% / cover no-repeat
+    );
 
     height: 34vw;
     width: 26.38vw;
@@ -258,18 +268,16 @@ body {
     justify-self: left;
   }
 
-
   .text_block {
     grid-area: 2/1;
-
+    position: absolute;
+    bottom: 0;
     width: 100%;
     display: grid;
     justify-content: center;
-
   }
 
-  .text_block>h3 {
-
+  .text_block > h3 {
     color: white;
 
     font-family: "Drakkar";
@@ -291,8 +299,7 @@ body {
     overflow: hidden;
   }
 
-  .card_img>img {
-
+  .card_img > img {
     height: 100%;
 
     width: auto;
@@ -306,13 +313,11 @@ body {
   /* Footer styles end */
 }
 
-
 /* ---------------КОМП--------------- */
 @media (min-width: 834px) {
   /* Header styles start */
 
   /* Header styles end */
-
 
   /* Main styles start */
 
@@ -347,18 +352,17 @@ body {
     justify-items: center;
   }
 
-
   .card {
     border-radius: 8px;
     background: url(../images/касти/card.png), lightgray 50% / cover no-repeat;
-    
+
     height: 22.22vw;
     width: 16.67vw;
 
     background-size: 100% 100%;
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
 
-    margin-top: 40px;
+    margin-top: 80px;
     margin-right: 0px;
     margin-left: 0px;
 
@@ -407,10 +411,8 @@ body {
     grid-area: 2/5;
   }
 
-
   .text_block {
     display: none;
-
   }
 
   .card_img {
@@ -424,8 +426,7 @@ body {
     overflow: hidden;
   }
 
-  .card_img>img {
-
+  .card_img > img {
     height: 100%;
 
     width: auto;
@@ -434,14 +435,24 @@ body {
 
   .card:hover {
     border-radius: 8px;
-    background: var(--hover_card, linear-gradient(180deg, rgba(157, 191, 232, 0.40) 0%, rgba(157, 191, 232, 0.16) 0.01%, rgba(157, 191, 232, 0.40) 100%), url(../images/касти/card.png), lightgray 50% / cover no-repeat);
+    background: var(
+      --hover_card,
+      linear-gradient(
+        180deg,
+        rgba(157, 191, 232, 0.4) 0%,
+        rgba(157, 191, 232, 0.16) 0.01%,
+        rgba(157, 191, 232, 0.4) 100%
+      ),
+      url(../images/касти/card.png),
+      lightgray 50% / cover no-repeat
+    );
     height: 22.22vw;
     width: 16.67vw;
 
     background-size: 100% 100%;
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
-
-    margin-top: 40px;
+    object-fit: cover;
+    object-position: center;
     margin-right: 0px;
     margin-left: 0px;
 
@@ -450,36 +461,50 @@ body {
     align-items: end;
   }
 
-  .card:hover>.card_img {
+  .card1 > .card:hover > .card_img {
     grid-area: 1/1;
-    margin-top: -65px;
+    margin-top: -64px;
+    display: flex;
+    justify-content: center;
+    height: 130%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    align-self: center;
+    overflow: hidden;
+    transition: 0.1s ease-in;
+  }
+  a:not(.card1) > .card:hover > .card_img {
+    grid-area: 1/1;
+    position: absolute;
+    bottom: 32px;
+    margin-left: -10%;
     display: flex;
     justify-content: center;
     height: 110%;
-    width: 100%;
+    width: 120%;
+    object-fit: cover;
+    object-position: center;
     align-self: center;
-    overflow: hidden;
+    transition: 0.1s ease-in;
   }
 
-  .card:hover>.card_img>img {
-
+  .card:hover > .card_img > img {
     height: 100%;
 
     width: auto;
     object-fit: cover;
   }
 
-  .card:hover>.text_block {
+  .card:hover > .text_block {
     grid-area: 2/1;
 
     width: 100%;
     display: grid;
     justify-content: center;
-
   }
 
-  .card:hover>.text_block>h3 {
-
+  .card:hover > .text_block > h3 {
     color: white;
 
     font-family: "Drakkar";
@@ -488,8 +513,16 @@ body {
     font-weight: 400;
     line-height: normal;
     text-align: center;
+    animation: textAnimate 0.1s ease-in forwards;
   }
-
+  @keyframes textAnimate {
+    0% {
+      margin-bottom: -20%;
+    }
+    100% {
+      margin-bottom: 0%;
+    }
+  }
   /* Main styles end */
 
   /* Footer styles start */
