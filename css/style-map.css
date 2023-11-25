@@ -38,14 +38,290 @@ body {
   line-height: normal;
   font-weight: 400;
   color: #fff;
-  background: url(../images/leraImages/AGED_PAPER\ 1.png) no-repeat center;
-  background-size: cover;
 }
-@media (max-width: 1024px) {
+@media (max-width: 390px) {
+  html {
+    overflow-y: hidden;
+  }
+  body {
+    overflow-y: hidden;
+  }
+  .map-container svg {
+    height: 100dvh;
+    background: url(../images/leraImages/AGED_PAPER\ 1.png) no-repeat center;
+  }
+  #modal-content {
+    min-width: 240px;
+    max-width: 80%;
+    width: fit-content;
+    height: auto;
+    max-height: 560px;
+  }
+  #modal-title {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 1024px) and (min-width: 390px) {
+  body {
+    background: url(../images/leraImages/AGED_PAPER\ 1.png) no-repeat center;
+  }
+  .map-container {
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+  }
+  .map-container svg {
+    height: 100vh;
+  }
+  #modal-content {
+    min-width: 240px;
+    max-width: 40%;
+    width: fit-content;
+    height: auto;
+    max-height: 560px;
+  }
 }
 @media (min-width: 1024px) {
+  body {
+    background: url(../images/leraImages/AGED_PAPER\ 1.png) no-repeat center;
+    background-size: contain;
+    background-size: cover;
+  }
   .map-container {
     margin-top: 64px;
+  }
+  .map-container {
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .map-container svg {
+    width: 65%;
+  }
+  .map-container svg :not(.river):hover {
+    -webkit-animation: rotateGradient 5s infinite;
+    stroke: url(#linear);
+    animation: rotateGradient 5s linear forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    stroke-width: 4px;
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+  }
+  @keyframes rotateGradient {
+    0% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear1);
+    }
+    2.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear2);
+    }
+    5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear3);
+    }
+    7.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear4);
+    }
+    10% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear5);
+    }
+    12.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear6);
+    }
+    15% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear7);
+    }
+    17.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear8);
+    }
+    20% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear9);
+    }
+    22.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear10);
+    }
+    25% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear11);
+    }
+    27.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear12);
+    }
+    30% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear13);
+    }
+    32.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear14);
+    }
+    35% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear15);
+    }
+    37.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear16);
+    }
+    40% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear17);
+    }
+    42.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear18);
+    }
+    45% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear19);
+    }
+    47.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear);
+    }
+    50% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear1);
+    }
+    52.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear2);
+    }
+    55% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear3);
+    }
+    57.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear4);
+    }
+    60% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear5);
+    }
+    62.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear6);
+    }
+    65% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear7);
+    }
+    67.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear8);
+    }
+    70% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear9);
+    }
+    72.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear10);
+    }
+    75% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear11);
+    }
+    77.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear12);
+    }
+    80% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear13);
+    }
+    82.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear14);
+    }
+    85% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear15);
+    }
+    87.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear16);
+    }
+    90% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear17);
+    }
+    92.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear18);
+    }
+    95% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear19);
+    }
+    97.5% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear);
+    }
+    100% {
+      -webkit-filter: brightness(175%);
+      filter: brightness(175%);
+      stroke: url(#linear1);
+    }
+  }
+  #modal-content {
+    min-width: 240px;
+    max-width: 20%;
+    width: fit-content;
+    height: auto;
+    max-height: 560px;
   }
 }
 #modal {
@@ -62,12 +338,7 @@ body {
 }
 
 #modal-content {
-  min-width: 240px;
-  max-width: 20%;
-  width: fit-content;
   z-index: 5;
-  height: auto;
-  max-height: 560px;
   background: #000;
   border-radius: 2vh;
   padding: 5px;
@@ -75,6 +346,17 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: left;
+  animation: showModal 0.3s ease-in forwards;
+}
+@keyframes showModal {
+  0% {
+    opacity: 0;
+    margin-bottom: -25%;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
 }
 .card_banner {
   position: relative;
@@ -147,14 +429,6 @@ body {
   color: white;
 }
 
-.map-container {
-  max-height: 100%;
-  display: flex;
-  justify-content: center;
-}
-.map-container svg {
-  width: 65%;
-}
 .map-container svg :not(.river) {
   filter: brightness(75%);
   stroke-width: 4px;
@@ -164,219 +438,4 @@ body {
   filter: brightness(175%);
   transition: 0.2s ease-out; */
   cursor: pointer;
-  -webkit-animation: rotateGradient 5s infinite;
-  stroke: url(#linear);
-  animation: rotateGradient 5s linear forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  stroke-width: 4px;
-  animation-delay: 0s;
-  -webkit-animation-delay: 0s;
-}
-@keyframes rotateGradient {
-  0% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear1);
-  }
-  2.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear2);
-  }
-  5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear3);
-  }
-  7.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear4);
-  }
-  10% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear5);
-  }
-  12.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear6);
-  }
-  15% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear7);
-  }
-  17.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear8);
-  }
-  20% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear9);
-  }
-  22.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear10);
-  }
-  25% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear11);
-  }
-  27.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear12);
-  }
-  30% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear13);
-  }
-  32.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear14);
-  }
-  35% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear15);
-  }
-  37.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear16);
-  }
-  40% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear17);
-  }
-  42.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear18);
-  }
-  45% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear19);
-  }
-  47.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear);
-  }
-  50% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear1);
-  }
-  52.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear2);
-  }
-  55% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear3);
-  }
-  57.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear4);
-  }
-  60% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear5);
-  }
-  62.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear6);
-  }
-  65% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear7);
-  }
-  67.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear8);
-  }
-  70% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear9);
-  }
-  72.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear10);
-  }
-  75% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear11);
-  }
-  77.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear12);
-  }
-  80% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear13);
-  }
-  82.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear14);
-  }
-  85% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear15);
-  }
-  87.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear16);
-  }
-  90% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear17);
-  }
-  92.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear18);
-  }
-  95% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear19);
-  }
-  97.5% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear);
-  }
-  100% {
-    -webkit-filter: brightness(175%);
-    filter: brightness(175%);
-    stroke: url(#linear1);
-  }
 }
