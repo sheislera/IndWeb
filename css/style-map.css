@@ -41,7 +41,13 @@ body {
   background: url(../images/leraImages/AGED_PAPER\ 1.png) no-repeat center;
   background-size: cover;
 }
-
+@media (max-width: 1024px) {
+}
+@media (min-width: 1024px) {
+  .map-container {
+    margin-top: 64px;
+  }
+}
 #modal {
   display: none;
   position: fixed;
@@ -142,7 +148,6 @@ body {
 }
 
 .map-container {
-  margin-top: 64px;
   max-height: 100%;
   display: flex;
   justify-content: center;
