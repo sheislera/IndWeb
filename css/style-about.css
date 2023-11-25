@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Advent Pro ExtraExpanded";
+  src: url(../fonts/AdventPro/AdventPro_ExtraExpanded-Regular.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Drakkar";
+  src: url(../fonts/Drakkar\ Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   font-family: "Advent Pro ExtraExpanded";
   font-size: 12px;
