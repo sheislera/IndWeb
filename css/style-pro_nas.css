@@ -288,11 +288,23 @@ body {
   .role_block {
     display: flex;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: fit-content;
+
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+
+    height: 20px;
+
+    margin-left: 5px;
+    margin-bottom: 5px;
   }
 
   .line_block {
     width: 12px;
-    background: linear-gradient(transparent 20%, white, transparent );
+    
   }
 
   .line {
@@ -303,20 +315,15 @@ body {
   }
 
   .role {
-    color: var(--black, #000);
+    color: black;
 
     font-family: "Advent";
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
 
-    background: linear-gradient(transparent 20%, white, transparent );
-
-    text-shadow:
-    1px 1px 5px white,
-    1px 1px 5px white;
   }
 
   .name {
@@ -325,14 +332,12 @@ body {
     font-family: "Drakkar";
     font-size: 24px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 550;
     line-height: normal;
 
-    background: linear-gradient(transparent 20%, white, transparent );
+    
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
-    text-shadow:
-    1px 1px 5px white,
-    1px 1px 5px white;
   }
 
   .tasks_block {
@@ -516,12 +521,13 @@ body {
 
   .title_block {
     
-    width: 35.97vw;
+    width: auto;
   }
 
   .role_block {
     display: flex;
     align-items: center;
+    background: none;
   }
 
   .line_block {
@@ -548,9 +554,7 @@ body {
 
     background: none;
 
-    text-shadow:
-    1px 1px 5px white,
-    1px 1px 5px white;
+
   }
 
   .name {
@@ -566,14 +570,12 @@ body {
 
     background: none;
 
-    text-shadow:
-    1px 1px 5px white,
-    1px 1px 5px white;
+
   }
 
   .tasks_block {
     padding-top: 16px;
-    width: 35.97vw;
+    width: auto;
   }
 
   .done {
@@ -624,45 +626,67 @@ body {
   }
 
   .main_block {
-    padding-left: 22vw;
-    padding-right: 22vw;
+    padding-left: 13vw;
+    padding-right: 13vw;
 
     display: grid;
-    justify-content: space-evenly;
-    justify-items: center;
+    justify-content: space-between;
+    justify-items: stretch;
+
+    
   }
 
   .pic_grid_1 {
     grid-area: 1 / 2 / 3 / 3 ;
-    
+    margin-top: -64px;
+    justify-content: end;
+    align-self: center;
+    margin-bottom: 120px;
   }
 
   .title_grid_1 {
     grid-area: 1 / 1 / 2 / 2 ;
     align-self: end;
+    justify-content: start;
+
+    
   }
 
   .tasks_grid_1 {
     grid-area: 2 / 1 / 3 / 2 ;
+    justify-content: start;
+    margin-bottom: 120px;
   }
 
 
   .pic_grid_2 {
+    
     grid-area: 3 / 1 / 5 / 2 ;
+    justify-content: start;
+    align-self: center;
+
+    margin-bottom: 120px;
   }
 
   .title_grid_2 {
+    
     grid-area: 3 / 2 / 4 / 3 ;
     align-self: end;
   }
 
   .tasks_grid_2 {
     grid-area: 4 / 2 / 5 / 3 ;
+
+    margin-bottom: 120px;
   }
 
 
   .pic_grid_3 {
     grid-area: 5 / 2 / 7 / 3 ;
+    justify-content: end;
+    align-self: center;
+
+    margin-bottom: 120px;
   }
 
   .title_grid_3 {
@@ -672,11 +696,17 @@ body {
 
   .tasks_grid_3 {
     grid-area: 6 / 1 / 7 / 2 ;
+
+    margin-bottom: 120px;
   }
 
 
   .pic_grid_4 {
     grid-area: 7 / 1 / 9 / 2 ;
+    justify-content: start;
+    align-self: center;
+
+    margin-bottom: 62px;
   }
 
   .title_grid_4 {
@@ -686,6 +716,8 @@ body {
 
   .tasks_grid_4 {
     grid-area: 8 / 2 / 9 / 3 ;
+
+    margin-bottom: 62px;
   }
 
   /* Main styles end */
