@@ -1,0 +1,728 @@
+@font-face {
+  font-family: "Advent";
+  src: url(../fonts/AdventPro/AdventPro_ExtraExpanded-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Drakkar";
+  src: url(../fonts/Drakkar\ Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: url(../images/головна/Paper-106-cut.jpg) no-repeat center;
+  background-size: cover;
+
+  color: black;
+}
+
+/* Header styles start */
+
+/* Header styles end */
+
+
+/* Main styles start */
+
+.main {
+  padding-top: 100px;
+  padding-bottom: 24px;
+}
+
+
+.us_block {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.us-text {
+  color: black;
+
+  font-family: "Drakkar";
+  font-size: 7.5vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ripped_line_block {
+  display: none;
+}
+
+.ripped_line {
+  border-top-style: dashed;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  border-top-width: 4px;
+}
+
+.pic_block {
+  padding-top: 24px;
+
+}
+
+.pic {
+  height: 90vw;
+  width: auto;
+}
+
+.title_block {}
+
+.role_block {
+  display: flex;
+  align-items: center;
+}
+
+.line_block {
+  width: 12px;
+}
+
+.line {
+  width: 100%;
+
+  border-top-color: black;
+  border-top-width: 1.5px;
+}
+
+.role {
+  color: var(--black, #000);
+
+  font-family: "Advent";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.name {
+  color: black;
+
+  font-family: "Drakkar";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.tasks_block {
+  padding-top: 34px;
+
+}
+
+.done {
+  color: black;
+
+  font-family: "Advent";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.list {
+  padding-top: 18px;
+
+
+  color: black;
+
+  font-family: "Advent";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  list-style: inside;
+}
+
+.kredo {
+  padding-top: 18px;
+
+  color: black;
+
+  font-family: "Advent";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.kredo_word {
+  color: black;
+
+  font-family: "Advent";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main_block {
+  display: grid;
+
+  justify-items: center;
+}
+
+.pic_grid_1 {
+  grid-area: 1 / 1;
+}
+
+.title_grid_1 {
+  grid-area: 2 / 1;
+}
+
+.tasks_grid_1 {
+  grid-area: 3 / 1;
+}
+
+
+.pic_grid_2 {
+  grid-area: 4 / 1;
+}
+
+.title_grid_2 {
+  grid-area: 5 / 1;
+}
+
+.tasks_grid_2 {
+  grid-area: 6 / 1;
+}
+
+
+.pic_grid_3 {
+  grid-area: 7 / 1;
+}
+
+.title_grid_3 {
+  grid-area: 8 / 1;
+}
+
+.tasks_grid_3 {
+  grid-area: 9 / 1;
+}
+
+
+.pic_grid_4 {
+  grid-area: 10 / 1;
+}
+
+.title_grid_4 {
+  grid-area: 11 / 1;
+}
+
+.tasks_grid_4 {
+  grid-area: 12 / 1;
+}
+
+
+/* Main styles end */
+
+/* Footer styles start */
+
+/* Footer styles end */
+
+/* ---------------ПЛАНШЕТ--------------- */
+@media (min-width: 390px) {
+  /* Header styles start */
+
+  /* Header styles end */
+
+
+  /* Main styles start */
+
+  .main {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+
+
+  .us_block {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .us-text {
+    color: black;
+
+    font-family: "Drakkar";
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .ripped_line_block {
+    display: none;
+  }
+
+  .ripped_line {
+    border-top-style: dashed;
+    border-top-color: rgba(0, 0, 0, 0.2);
+    border-top-width: 4px;
+  }
+
+  .pic_block {
+    padding-top: 24px;
+    display: grid;
+    align-self: end;
+  }
+
+  .pic {
+    height: 42.09vw;
+    width: auto;
+  }
+
+  .title_block {
+    
+    width: 35.97vw;
+  }
+
+  .role_block {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: fit-content;
+
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+
+    height: 20px;
+
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+
+  .line_block {
+    width: 12px;
+    
+  }
+
+  .line {
+    width: 100%;
+
+    border-top-color: black;
+    border-top-width: 1.5px;
+  }
+
+  .role {
+    color: black;
+
+    font-family: "Advent";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+
+  }
+
+  .name {
+    color: black;
+
+    font-family: "Drakkar";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+
+    
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+  }
+
+  .tasks_block {
+    padding-top: 12px;
+    width: 35.97vw;
+  }
+
+  .done {
+    color: black;
+
+    font-family: "Advent";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .list {
+    padding-top: 18px;
+
+
+    color: black;
+
+    font-family: "Advent";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    list-style: inside;
+  }
+
+  .kredo {
+    padding-top: 18px;
+
+    color: black;
+
+    font-family: "Advent";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .kredo_word {
+    color: black;
+
+    font-family: "Advent";
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .main_block {
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+  }
+
+  .pic_grid_1 {
+    grid-area: 1 / 1;
+    
+  }
+
+  .title_grid_1 {
+    grid-area: 1 / 1;
+    align-self: end;
+  }
+
+  .tasks_grid_1 {
+    grid-area: 2 / 1;
+  }
+
+
+  .pic_grid_2 {
+    grid-area: 1 / 2;
+  }
+
+  .title_grid_2 {
+    grid-area: 1 / 2;
+    align-self: end;
+  }
+
+  .tasks_grid_2 {
+    grid-area: 2 / 2;
+  }
+
+
+  .pic_grid_3 {
+    grid-area: 3 / 1;
+  }
+
+  .title_grid_3 {
+    grid-area: 3 / 1;
+    align-self: end;
+  }
+
+  .tasks_grid_3 {
+    grid-area: 4 / 1;
+  }
+
+
+  .pic_grid_4 {
+    grid-area: 3 / 2;
+  }
+
+  .title_grid_4 {
+    grid-area: 3 / 2;
+    align-self: end;
+  }
+
+  .tasks_grid_4 {
+    grid-area: 4 / 2;
+  }
+
+  /* Main styles end */
+
+  /* Footer styles start */
+
+  /* Footer styles end */
+}
+
+
+/* ---------------КОМП--------------- */
+@media (min-width: 834px) {
+  /* Header styles start */
+
+  /* Header styles end */
+
+
+  /* Main styles start */
+
+  .main {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+
+
+  .us_block {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .us-text {
+    color: black;
+
+    font-family: "Drakkar";
+    font-size: 2.78vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .ripped_line_block {
+    display: block;
+    padding-top: 32px;
+    width: 45vw;
+  }
+
+  .ripped_line {
+    border-top-style: dashed;
+    border-top-color: black;
+    border-top-width: 2px;
+  }
+
+  .pic_block {
+    padding-top: 24px;
+    display: grid;
+    align-self: end;
+  }
+
+  .pic {
+    height: 32.5vw;
+    width: auto;
+  }
+
+  .title_block {
+    
+    width: auto;
+  }
+
+  .role_block {
+    display: flex;
+    align-items: center;
+    background: none;
+  }
+
+  .line_block {
+    width: 16px;
+    background: none;
+  }
+
+  .line {
+    width: 100%;
+
+    border-top-color: black;
+    border-top-width: 1.5px;
+  }
+
+  .role {
+    color: var(--black, #000);
+
+    font-family: "Advent";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+
+    background: none;
+
+
+  }
+
+  .name {
+    padding-top: 11px;
+
+    color: black;
+
+    font-family: "Drakkar";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    background: none;
+
+
+  }
+
+  .tasks_block {
+    padding-top: 16px;
+    width: auto;
+  }
+
+  .done {
+    color: black;
+
+    font-family: "Advent";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .list {
+    padding-top: 20px;
+
+
+    color: black;
+
+    font-family: "Advent";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    list-style: inside;
+  }
+
+  .kredo {
+    padding-top: 36px;
+
+    color: black;
+
+    font-family: "Advent";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .kredo_word {
+    color: black;
+
+    font-family: "Advent";
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .main_block {
+    padding-left: 13vw;
+    padding-right: 13vw;
+
+    display: grid;
+    justify-content: space-between;
+    justify-items: stretch;
+
+    
+  }
+
+  .pic_grid_1 {
+    grid-area: 1 / 2 / 3 / 3 ;
+    margin-top: -64px;
+    justify-content: end;
+    align-self: center;
+    margin-bottom: 120px;
+  }
+
+  .title_grid_1 {
+    grid-area: 1 / 1 / 2 / 2 ;
+    align-self: end;
+    justify-content: start;
+
+    
+  }
+
+  .tasks_grid_1 {
+    grid-area: 2 / 1 / 3 / 2 ;
+    justify-content: start;
+    margin-bottom: 120px;
+  }
+
+
+  .pic_grid_2 {
+    
+    grid-area: 3 / 1 / 5 / 2 ;
+    justify-content: start;
+    align-self: center;
+
+    margin-bottom: 120px;
+  }
+
+  .title_grid_2 {
+    
+    grid-area: 3 / 2 / 4 / 3 ;
+    align-self: end;
+  }
+
+  .tasks_grid_2 {
+    grid-area: 4 / 2 / 5 / 3 ;
+
+    margin-bottom: 120px;
+  }
+
+
+  .pic_grid_3 {
+    grid-area: 5 / 2 / 7 / 3 ;
+    justify-content: end;
+    align-self: center;
+
+    margin-bottom: 120px;
+  }
+
+  .title_grid_3 {
+    grid-area: 5 / 1 / 6 / 2 ;
+    align-self: end;
+  }
+
+  .tasks_grid_3 {
+    grid-area: 6 / 1 / 7 / 2 ;
+
+    margin-bottom: 120px;
+  }
+
+
+  .pic_grid_4 {
+    grid-area: 7 / 1 / 9 / 2 ;
+    justify-content: start;
+    align-self: center;
+
+    margin-bottom: 62px;
+  }
+
+  .title_grid_4 {
+    grid-area: 7 / 2 / 8 / 3 ;
+    align-self: end;
+  }
+
+  .tasks_grid_4 {
+    grid-area: 8 / 2 / 9 / 3 ;
+
+    margin-bottom: 62px;
+  }
+
+  /* Main styles end */
+
+  /* Footer styles start */
+
+  /* Footer styles end */
+}
