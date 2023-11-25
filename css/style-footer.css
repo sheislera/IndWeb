@@ -2,6 +2,7 @@
 footer {
   position: relative;
   margin-top: -15px;
+  margin-top: -15px;
 }
 
 .footer_block {
@@ -18,12 +19,17 @@ footer {
   width: 100%;
   overflow: hidden;
   margin-bottom: -6px;
+  margin-bottom: -6px;
 }
 
 .footer__img {
   width: 15%;
   height: auto;
   flex-shrink: 0;
+}
+
+.footer__nav1 {
+  justify-items: center;
 }
 
 .footer__nav1 {
@@ -46,7 +52,19 @@ footer {
   color: #fff;
   font-family: "Advent Pro ExtraExpanded";
   font-size: 12px;
+  font-size: 12px;
   font-weight: 400;
+}
+
+.footer__nav23 {
+  display: flex;
+  padding-top: 28px;
+  justify-content: center;
+}
+
+.footer__nav2 {
+  margin-right: 37px;
+  margin-left: 5%;
 }
 
 .footer__nav23 {
@@ -69,7 +87,12 @@ footer {
   margin-bottom: 8px;
 }
 
+.footer__item {
+  margin-bottom: 8px;
+}
+
 .footer__item-map {
+  margin-bottom: 8px;
   margin-bottom: 8px;
 }
 
@@ -84,16 +107,23 @@ footer {
   float: none;
 }
 
+.footer__nav3 {
+  margin-right: 0;
+  float: none;
+}
+
 .footer__list-kasta {
   margin-right: 1%;
 }
 
 .footer__item-kasta {
   margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 #kasta__name {
   font-family: "Drakkar";
+  font-size: 20px;
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -104,6 +134,10 @@ footer {
   max-width: 100%;
   border-radius: 8px;
   object-fit: cover;
+  display: block;
+  margin: auto;
+  margin-top: 24px;
+  padding-bottom: 20px;
   display: block;
   margin: auto;
   margin-top: 24px;
