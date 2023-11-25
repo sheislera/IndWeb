@@ -41,9 +41,11 @@ body {
   background: url(../images/leraImages/AGED_PAPER\ 1.png) no-repeat center;
   background-size: cover;
 }
-
 /* Intro styles start */
-
+.section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
 .intro {
   height: 120vh;
   background: url(../images/leraImages/kingdom.png) no-repeat center;
