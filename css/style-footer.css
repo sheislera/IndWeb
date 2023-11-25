@@ -1,12 +1,12 @@
 /* Footer styles start */
 footer {
   position: relative;
+  margin-top: -15px;
 }
 
 .footer_block {
   background: #000000;
   height: auto;
-  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -14,10 +14,10 @@ footer {
 }
 
 .footer__ripped {
-  position: absolute;
   bottom: 85%;
   width: 100%;
   overflow: hidden;
+  margin-bottom: -5px;
 }
 
 .footer__img {
@@ -26,56 +26,249 @@ footer {
   flex-shrink: 0;
 }
 
-.footer__list {
-  margin-left: 5%;
+.footer__nav1{
+  justify-items: center;
 }
 
-.footer__item {
-  margin-bottom: 2%;
+.footer__list{
+  display: flex;
+  padding-top: 48px;
+  justify-content: center;
+  align-items: center;
 }
+
+.footer__list__div123{
+  margin-right: 4.796%;
+}
+
 
 .footer__link {
   text-decoration: none;
   color: #fff;
   font-family: "Advent Pro ExtraExpanded";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
 }
 
+.footer__nav23{
+  display: flex;
+  padding-top: 28px;
+  justify-content: center;
+}
+
+.footer__nav2{
+  margin-right: 37px;
+  margin-left: 5%;
+}
+
+
 .footer__list-map {
-  margin-left: 0%;
+  margin-left: 10%;
   width: 100%;
 }
 
+.footer__item{
+  margin-bottom: 8px;
+}
+
 .footer__item-map {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 #map__name {
   font-family: "Drakkar";
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 12px;
 }
 
-.footer__list-kasta {
-  margin-left: 5%;
+.footer__nav3{
+  margin-right: 0;
+  float: none;
+}
+
+.footer__list-kasta{
+  margin-right: 1%;
 }
 
 .footer__item-kasta {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 #kasta__name {
   font-family: "Drakkar";
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 .footer__pic {
-  width: 30%;
-  height: auto;
+
+  width: 294px;
+  height: 127px;
   max-width: 100%;
   border-radius: 8px;
   object-fit: cover;
+  display: block;
+  margin: auto;
+  margin-top: 24px;
+  padding-bottom: 20px;
 }
 /* Footer styles end */
+
+/* ---------------ПЛАНШЕТ--------------- */
+@media (min-width: 390px) {
+
+.footer__ripped {
+  margin-top: -3px;
+  margin-bottom: -11px;
+}
+
+.footer__nav23 {
+  display: none;
+}
+
+.footer__pic{
+  display: none;
+}
+
+.footer__nav2{
+  margin-right: 0px;
+}
+
+.footer__list{
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+
+.footer__list__div123{
+  margin-right: 0px;
+  display: flex;
+}
+.footer__list__div45{
+  display: flex;
+}
+
+.footer__list__div1{
+  margin-right: 32px;
+}
+
+.footer__list__div2{
+  margin-right: 32px;
+}
+
+.footer__list__div3{
+  margin-right: 32px;
+}
+
+.footer__list__div4{
+  margin-right: 32px;
+}
+}
+
+/* ---------------КОМП--------------- */
+@media (min-width: 834px) {
+.footer{
+  margin-top: 0px;
+}
+
+  .footer__ripped{
+    margin-top: -17px;
+    margin-bottom: -16px;
+  }
+
+  .footer_block {
+    display: flex;
+  }
+
+  .footer__ripped {
+    position: absolute;
+    overflow: hidden;
+    margin-bottom: 0px;
+  }
+
+  .footer__nav1{
+    justify-items:normal;
+  }
+
+  .footer__list{
+    display: grid;
+    justify-content: left;
+    align-items:normal;
+    margin-left: 5%;
+  }
+
+  .footer__list__div123{
+    margin-right: 0px;
+    display: block;
+  }
+
+  .footer__list__div45{
+    margin-right: 0px;
+    display: block;
+  }
+
+  .footer__item{
+    margin-bottom: 8px;
+  }
+
+  .footer__link {
+    font-size: 14px;
+  }
+  
+  .footer__nav23{
+    display:flex;
+    padding-top: 0px;
+    justify-content:left;
+  }
+  
+  .footer__nav2{
+    margin-right: 10%;
+  }
+  
+  .footer__list-map {
+    margin-left: 0%;
+    width: 100%;
+  }
+  
+  .footer__item-map {
+    margin-bottom: 6px;
+  }
+  
+  #map__name {
+    font-family: "Drakkar";
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .footer__list-kasta {
+    margin-left: 5%;
+  }
+  
+  .footer__nav3{
+    margin-right: 0;
+    float:none;
+  }
+  
+  .footer__item-kasta {
+    margin-bottom: 6px;
+
+  }
+  
+  #kasta__name {
+    font-family: "Drakkar";
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer__pic {
+  
+    width: 30%;
+    height: 127px;
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+    margin: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
+}
