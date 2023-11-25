@@ -1,26 +1,3 @@
-@font-face {
-  font-family: "Advent Pro ExtraExpanded";
-  src: url(../fonts/AdventPro/AdventPro_ExtraExpanded-Regular.ttf);
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Drakkar";
-  src: url(../fonts/Drakkar\ Regular.otf);
-  font-weight: 400;
-  font-style: normal;
-}
-
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body {
   font-family: "Advent Pro ExtraExpanded";
   font-size: 12px;
@@ -28,7 +5,6 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-
 
 .main{
   background: url("../images/about/AGED_PAPER\ 2\ \(1\).png");
@@ -380,4 +356,4 @@ body{
     max-width: 100%;
     min-width: 100%;
   }
-}
+} 
