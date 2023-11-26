@@ -18,11 +18,10 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-.main {
   background: url("../images/about/AGED_PAPER\ 2\ \(1\).png");
 }
+
+
 
 .top__img {
   display: none;
