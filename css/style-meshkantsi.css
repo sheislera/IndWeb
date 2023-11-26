@@ -144,7 +144,10 @@ body {
 
   overflow: hidden;
 }
-
+.card:hover .card_horn_one {
+  width: 100%;
+  transform: scale(1.1) translateY(-10%);
+}
 .card_img > img {
   height: 100%;
   /* Задайте висоту картинки на 100% блоку .card_img */
@@ -174,7 +177,6 @@ body {
 
   .kast-text-block {
     justify-self: center;
-    
   }
 
   .kast-text {
