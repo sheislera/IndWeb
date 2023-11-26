@@ -54,6 +54,7 @@ a:hover {
   justify-items: center;
   justify-content: space-around;
   padding-top: 40px;
+  align-items: center;
 }
 
 .footer-logo_block {
