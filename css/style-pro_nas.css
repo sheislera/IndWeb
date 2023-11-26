@@ -215,7 +215,7 @@ body {
 /* Footer styles end */
 
 /* ---------------ПЛАНШЕТ--------------- */
-@media (min-width: 390px) and (max-width: 1024px) {
+@media (min-width: 390px) {
   /* Header styles start */
 
   /* Header styles end */

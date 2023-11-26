@@ -178,7 +178,7 @@ hr {
 
 
 /* ---------------ПЛАНШЕТ--------------- */
-@media (min-width: 390px) and (max-width: 1024px) {
+@media (min-width: 390px) {
 
   p {
     font-size: 14px;
