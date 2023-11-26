@@ -18,7 +18,7 @@ a {
   color: white;
 }
 a:hover {
-  color: blueviolet;
+  color: white;
 }
 
 .footer {
@@ -128,6 +128,13 @@ a:hover {
 /* ---------------ПЛАНШЕТ--------------- */
 @media (min-width: 390px) {
 
+  a {
+    color: white;
+  }
+  a:hover {
+    color: white;
+  }
+
   .footer {
     width: 100%;
     overflow: hidden;
@@ -230,6 +237,14 @@ a:hover {
 
 /* ---------------КОМП--------------- */
 @media (min-width: 1024px) {
+
+  a {
+    color: white;
+  }
+  a:hover {
+    color: blueviolet;
+  }
+
   .footer {
     width: 100%;
     overflow: hidden;
