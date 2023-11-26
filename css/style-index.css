@@ -319,6 +319,10 @@ body {
   transition-delay: 400ms;
 }
 
+.casta{
+  display: none;
+}
+
 .casta_btn {
   width: 16vw;
   height: 8vh;
