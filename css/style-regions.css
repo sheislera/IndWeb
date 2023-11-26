@@ -90,6 +90,23 @@ p {
   margin-top: -20px;
 }
 
+@media (min-width: 1024px) {
+  .galleryblock {
+    display: flex;
+  }
+  hr {
+    display: block;
+  }
+}
+@media (max-width: 1024px) {
+  .galleryblock {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+}
+
 /* Header styles end */
 
 /* Intro styles start */
@@ -181,7 +198,6 @@ hr {
 
 .galleryblock {
   height: 603px;
-  display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -192,10 +208,8 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  width: calc(
-    100% + 50%
-  ); /* Increase the width to account for the side images */
-  margin-left: -25%; /* Shift everything to the left by 25% of the container width */
+  width: 150%;
+  margin-left: -25%;
   margin-right: -25%;
 }
 
@@ -279,13 +293,11 @@ button {
   border: 2px white solid;
 }
 
-
 .gallery-button_left span {
   z-index: 8;
   width: 48px;
   height: 2px;
   background-color: white;
-  
 }
 
 .gallery-button_right span {
@@ -293,7 +305,6 @@ button {
   width: 48px;
   height: 2px;
   background-color: white;
-  
 }
 
 .gallery-button_left span:nth-child(1) {
