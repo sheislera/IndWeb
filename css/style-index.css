@@ -415,6 +415,10 @@ body {
 }
 
 @media (min-width: 390px) and (max-width: 1024px) {
+  .cards__header {
+    display: none;
+  }
+  
   .mob__info {
     display: none;
   }
@@ -507,6 +511,10 @@ body {
 }
 
 @media (max-width: 390px) {
+
+  .cards__header {
+    display: none;
+  }
   .cards {
     display: none;
   }
