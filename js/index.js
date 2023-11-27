@@ -15,13 +15,13 @@ function unhoverMap() {
 }
 
 const links = [
-    '#1',
-    '#2',
-    '#3',
-    '#',
-    '#',
-    '#',
-    '#'
+    'kastaHTML/akademiky.html',
+    'kastaHTML/temni.html',
+    'kastaHTML/universytetsi.html',
+    'kastaHTML/koroleva.html',
+    'kastaHTML/roshenokraty.html',
+    'kastaHTML/orden.html',
+    'kastaHTML/chebretsevi.html'
 ];
 
 const boxes = document.querySelectorAll('.box');
