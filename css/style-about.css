@@ -21,8 +21,6 @@ body {
   background: url("../images/about/AGED_PAPER\ 2\ \(1\).png");
 }
 
-
-
 .top__img {
   display: none;
 }
@@ -130,7 +128,7 @@ hr {
 }
 
 /* ---------------ПЛАНШЕТ--------------- */
-@media (min-width: 390px) {
+@media (min-width: 426px) {
   .top__img {
     display: inline;
     width: 100%;

@@ -414,11 +414,11 @@ body {
   }
 }
 
-@media (min-width: 390px) and (max-width: 1024px) {
+@media (min-width: 426px) and (max-width: 1023px) {
   .cards__header {
     display: none;
   }
-  
+
   .mob__info {
     display: none;
   }
@@ -510,8 +510,7 @@ body {
   }
 }
 
-@media (max-width: 390px) {
-
+@media (max-width: 425px) {
   .cards__header {
     display: none;
   }

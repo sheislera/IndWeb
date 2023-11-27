@@ -188,7 +188,7 @@
   }
 }
 /* ---------------ТЕЛЕФОН--------------- */
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .burger-menu-btn {
     top: 40px;
   }
@@ -243,7 +243,7 @@
   }
 }
 /* ---------------ПЛАНШЕТ--------------- */
-@media (min-width: 390px) and (max-width: 1023px) {
+@media (min-width: 426px) and (max-width: 1023px) {
   .burger-menu-btn {
     top: 24px;
   }

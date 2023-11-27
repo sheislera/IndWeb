@@ -39,7 +39,7 @@ body {
   font-weight: 400;
   color: #fff;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   html {
     overflow-y: hidden;
   }
@@ -61,7 +61,7 @@ body {
     font-size: 20px !important;
   }
 }
-@media (max-width: 1024px) and (min-width: 390px) {
+@media (max-width: 1024px) and (min-width: 426px) {
   body {
     background: url(../images/leraImages/AGED_PAPER\ 1.png) no-repeat center;
   }
@@ -82,7 +82,7 @@ body {
     max-height: 560px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   body {
     background: url(../images/leraImages/AGED_PAPER\ 1.png) no-repeat center;
     background-size: contain;
