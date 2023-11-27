@@ -108,17 +108,17 @@ body {
 }
 
 .map__block {
-  align-items: center;
   display: grid;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-  width: 100vw;
+  margin-left: 5vw;
+  width: 90dvw;
 }
 
 .leaves__img {
   width: 100%;
   height: auto;
-  overflow: hidden;
 }
 
 .leaves_right {
@@ -186,7 +186,7 @@ body {
   display: grid;
   justify-content: space-between;
   overflow: hidden;
-  width: 100vw;
+  width: 90dvw;
 }
 .cards__title {
   font-weight: 700;
