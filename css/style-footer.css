@@ -1,274 +1,355 @@
-/* Footer styles start */
-footer {
-  position: relative;
-  margin-top: -15px;
+@font-face {
+  font-family: "Advent";
+  src: url(../fonts/AdventPro/AdventPro_ExtraExpanded-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+
+@font-face {
+  font-family: "Drakkar";
+  src: url(../fonts/Drakkar\ Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+
+.footer {
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+
+}
+
+.f_p {
+  font-size: 12px;
+}
+
+
+
+
+
+.footer-rippedpaper {
+  align-self: end;
+  top: 80%;
+  width: 102vw;
+
+  margin-bottom: -3vw;
+  margin-left: -2vw;
+
 }
 
 .footer_block {
-  background: #000000;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  flex-wrap: wrap;
-}
-
-.footer__ripped {
-  bottom: 85%;
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: -6px;
-}
-
-.footer__img {
-  width: 15%;
-  height: auto;
-  flex-shrink: 0;
-}
-
-.footer__nav1{
-  justify-items: center;
-}
-
-.footer__list{
-  display: flex;
-  padding-top: 48px;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer__list__div123{
-  margin-right: 4.796%;
-}
-
-
-.footer__link {
-  text-decoration: none;
-  color: #fff;
-  font-family: "Advent Pro ExtraExpanded";
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.footer__nav23{
-  display: flex;
-  padding-top: 28px;
-  justify-content: center;
-}
-
-.footer__nav2{
-  margin-right: 37px;
-  margin-left: 5%;
-}
-
-
-.footer__list-map {
-  margin-left: 10%;
-  width: 100%;
-}
-
-.footer__item{
-  margin-bottom: 8px;
-}
-
-.footer__item-map {
-  margin-bottom: 8px;
-}
-
-#map__name {
-  font-family: "Drakkar";
-  font-size: 20px;
-  margin-bottom: 12px;
-}
-
-.footer__nav3{
-  margin-right: 0;
-  float: none;
-}
-
-.footer__list-kasta{
-  margin-right: 1%;
-}
-
-.footer__item-kasta {
-  margin-bottom: 8px;
-}
-
-#kasta__name {
-  font-family: "Drakkar";
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.footer__pic {
-
-  width: 294px;
-  height: 127px;
-  max-width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
-  display: block;
-  margin: auto;
-  margin-top: 24px;
+  background-color: black;
+  display: grid;
+  row-gap: 20px;
   padding-bottom: 20px;
+  justify-items: center;
+  justify-content: space-around;
+  padding-top: 40px;
+  align-items: center;
 }
-/* Footer styles end */
+
+.footer-logo_block {
+  grid-area: 1 / 1 / 4 / 2;
+}
+
+.footer-logo_block>img {
+  height: 80px;
+  width: auto;
+}
+
+.footer-main_block {
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: start;
+
+}
+
+.footer-map_block {
+  grid-area: 2 / 2 / 3 / 3;
+  justify-self: start;
+}
+
+.footer-aboutus_block {
+  grid-area: 3 / 2 / 4 / 3;
+  justify-self: start;
+}
+
+.footer-aboutkingdom_block {
+  grid-area: 1 / 3 / 2 / 5;
+  justify-self: start;
+}
+
+.footer-kasta_block {
+  grid-area: 2 / 3 / 3 / 5;
+  justify-self: start;
+}
+
+.footer-map-list_block {
+  grid-area: 4 / 1 / 5 / 3;
+}
+
+.footer-kasta-list_block {
+  grid-area: 4 / 3 / 5 / 5;
+}
+
+.footer-map-list_block>a>p,
+.footer-kasta-list_block>a>p {
+  font-size: 12px;
+  font-family: "Advent";
+  padding-top: 4px;
+}
+
+.footer-map-list_block>a>h1,
+.footer-kasta-list_block>a>h1 {
+  font-size: 20px;
+  font-family: "Drakkar";
+  padding-bottom: 1px;
+}
+
+
+.footer-pic_block {
+  grid-area: 5 / 1 / 6 / 5;
+
+  background: url(../images/leraImages/footer_pic.png) no-repeat center;
+  width: 80vw;
+  height: 127px;
+  border-radius: 8px;
+
+}
+
+.footer-map-list_block>a,
+.footer-kasta-list_block>a, 
+.footer_block>a {
+  color: white;
+}
 
 /* ---------------ПЛАНШЕТ--------------- */
 @media (min-width: 390px) {
 
-.footer__ripped {
-  margin-top: -3px;
-  margin-bottom: -11px;
-}
 
-.footer__nav23 {
-  display: none;
-}
+  .footer {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
 
-.footer__pic{
-  display: none;
-}
+  }
 
-.footer__nav2{
-  margin-right: 0px;
-}
+  .f_p {
+    font-size: 16px;
+  }
 
-.footer__list{
-  padding-top: 29px;
-  padding-bottom: 29px;
-}
+  .footer-rippedpaper {
+    align-self: end;
+    top: 80%;
+    width: 102vw;
 
-.footer__list__div123{
-  margin-right: 0px;
-  display: flex;
-}
-.footer__list__div45{
-  display: flex;
-}
+    margin-bottom: -3vw;
+    margin-left: -2vw;
 
-.footer__list__div1{
-  margin-right: 32px;
-}
-
-.footer__list__div2{
-  margin-right: 32px;
-}
-
-.footer__list__div3{
-  margin-right: 32px;
-}
-
-.footer__list__div4{
-  margin-right: 32px;
-}
-}
-
-/* ---------------КОМП--------------- */
-@media (min-width: 834px) {
-.footer{
-  margin-top: 0px;
-}
-
-  .footer__ripped{
-    margin-top: -17px;
-    margin-bottom: -16px;
   }
 
   .footer_block {
-    display: flex;
-  }
-
-  .footer__ripped {
-    position: absolute;
-    overflow: hidden;
-    margin-bottom: 0px;
-  }
-
-  .footer__nav1{
-    justify-items:normal;
-  }
-
-  .footer__list{
+    background-color: black;
     display: grid;
-    justify-content: left;
-    align-items:normal;
-    margin-left: 5%;
+    row-gap: 20px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    justify-items: center;
+    justify-content: space-evenly;
   }
 
-  .footer__list__div123{
-    margin-right: 0px;
-    display: block;
+  .footer-logo_block {
+    grid-area: 1 / 1;
+    justify-self: start;
   }
 
-  .footer__list__div45{
-    margin-right: 0px;
-    display: block;
+  .footer-logo_block>img {
+    height: 80px;
+    width: auto;
   }
 
-  .footer__item{
-    margin-bottom: 8px;
+  .footer-main_block {
+    grid-area: 1 / 2;
+    justify-self: start;
   }
 
-  .footer__link {
-    font-size: 14px;
+  .footer-map_block {
+    grid-area: 1 / 4;
+    justify-self: start;
   }
-  
-  .footer__nav23{
-    display:flex;
-    padding-top: 0px;
-    justify-content:left;
+
+  .footer-aboutus_block {
+    grid-area: 1 / 6;
+    justify-self: start;
   }
-  
-  .footer__nav2{
-    margin-right: 10%;
+
+  .footer-aboutkingdom_block {
+    grid-area: 1 / 3;
+    justify-self: start;
   }
-  
-  .footer__list-map {
-    margin-left: 0%;
-    width: 100%;
+
+  .footer-kasta_block {
+    grid-area: 1 / 5;
+    justify-self: start;
   }
-  
-  .footer__item-map {
-    margin-bottom: 6px;
+
+  .footer-map-list_block {
+    grid-area: unset;
+    display: none;
   }
-  
-  #map__name {
+
+  .footer-kasta-list_block {
+    grid-area: unset;
+    display: none;
+  }
+
+  .footer-map-list_block>a>p,
+  .footer-kasta-list_block>a>p {
+    font-size: 12px;
+    font-family: "Advent";
+  }
+
+  .footer-map-list_block>a>h1,
+  .footer-kasta-list_block>a>h1 {
+    font-size: 20px;
     font-family: "Drakkar";
-    font-size: 18px;
-    margin-bottom: 12px;
+    padding-bottom: 1px;
   }
 
-  .footer__list-kasta {
-    margin-left: 5%;
-  }
-  
-  .footer__nav3{
-    margin-right: 0;
-    float:none;
-  }
-  
-  .footer__item-kasta {
-    margin-bottom: 6px;
+  .footer-pic_block {
+    grid-area: 5 / 1 / 6 / 5;
 
-  }
-  
-  #kasta__name {
-    font-family: "Drakkar";
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .footer__pic {
-  
-    width: 30%;
+    background: url(../images/leraImages/footer_pic.png) no-repeat center;
+    width: 80vw;
     height: 127px;
-    max-width: 100%;
     border-radius: 8px;
-    object-fit: cover;
+    display: none;
+  }
+
+  .footer-map-list_block>a,
+  .footer-kasta-list_block>a, 
+  .footer_block>a {
+    color: white;
+  }
+}
+
+/* ---------------КОМП--------------- */
+@media (min-width: 1024px) {
+
+
+  .footer {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+
+  }
+
+  .f_p {
+    font-size: 16px;
+  }
+
+  .footer-rippedpaper {
+    align-self: end;
+    top: 80%;
+    width: 103vw;
+
+    margin-bottom: -3vw;
+    margin-left: -2vw;
+
+  }
+
+  .footer_block {
+    background-color: black;
+    display: grid;
+    row-gap: 0px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    justify-items: center;
+    justify-content: space-evenly;
+  }
+
+  .footer-logo_block {
+    grid-area: 1 / 1 / 6 / 2;
+    justify-self: start;
+  }
+
+  .footer-logo_block>img {
+    height: 100%;
+    width: auto;
+  }
+
+  .footer-main_block {
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: start;
+  }
+
+  .footer-map_block {
+    grid-area: 3 / 2 / 4 / 3;
+    justify-self: start;
+  }
+
+  .footer-aboutus_block {
+    grid-area: 5 / 2 / 6 / 3;
+    justify-self: start;
+  }
+
+  .footer-aboutkingdom_block {
+    grid-area: 2 / 2 / 3 / 3;
+    justify-self: start;
+  }
+
+  .footer-kasta_block {
+    grid-area: 4 / 2 / 5 / 3;
+    justify-self: start;
+  }
+
+  .footer-map-list_block {
+    grid-area: 1 / 3 / 6 / 4;
     display: block;
-    margin: 0px;
-    margin-top: 0px;
-    padding-bottom: 0px;
+  }
+
+  .footer-kasta-list_block {
+    grid-area: 1 / 4 / 6 / 5;
+    display: block;
+  }
+
+  .footer-map-list_block>a>p,
+  .footer-kasta-list_block>a>p {
+    font-size: 16px;
+    font-family: "Advent";
+    padding-top: 11px;
+  }
+
+
+
+  .footer-map-list_block>a>h1,
+  .footer-kasta-list_block>a>h1 {
+    font-size: 24px;
+    font-family: "Drakkar";
+    padding-bottom: 5px;
+  }
+
+  .footer-pic_block {
+    grid-area: 1 / 5 / 6 / 6;
+
+    background: url(../images/leraImages/footer_pic.png) no-repeat center;
+    width: 31vw;
+    height: 192px;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .footer-map-list_block>a:hover,
+  .footer-kasta-list_block>a:hover, 
+  .footer_block>a:hover {
+    color: blueviolet;
+  }
+
+  .footer-map-list_block>a,
+  .footer-kasta-list_block>a, 
+  .footer_block>a {
+    color: white;
   }
 }

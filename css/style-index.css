@@ -31,13 +31,11 @@ html {
   color: white;
 }
 
-@media(max-width: 390px) {
-  
-}
 body {
+  position: relative;
   font-family: "Advent Pro ExtraExpanded";
   font-style: normal;
-  font-size: 14px;
+  font-size: 24px;
   line-height: normal;
   font-weight: 400;
   color: #fff;
@@ -45,62 +43,130 @@ body {
   background-size: cover;
 }
 /* Intro styles start */
-
-.intro{
-  position: relative;
+.section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.intro {
+  background: url(../images/leraImages/kingdom.png) no-repeat center;
+  background-size: cover;
 }
 
-.intro__img{
-  margin-bottom: 16px;
-  position: relative;
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-  object-position: top;
-  z-index: 1;
+@media (min-width: 1024px) {
+
+  .mob__info{
+    display: none;
+  }
+  .intro {
+    height: 120vh;
+  }
+
+  .intro__title {
+    padding-top: 400px;
+    padding-left: 57px;
+    font-size: 8vh;
+    text-shadow: 1px 0 8px white;
+    margin-bottom: 32px;
+  }
+  
+  .intro__text {
+    font-size: 4vh;
+    font-weight: 500;
+    padding-left: 57px;
+  }
+
+  .info {
+    height: 732px;
+    margin-top: -52px;
+  }
+
+  .info__title {
+    display: block;
+    font-size: 48px;
+    padding-top: 304px;
+    margin-bottom: 24px;
+  }
+  
+  .info__text {
+    display: block;
+    margin-bottom: 40px;
+  }
+  
+  .info__button {
+    width: 280px;
+    height: 80px;
+  }
+  
+  .info__button a {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
+  .info__button:hover {
+    background: rgb(159 224 224 / 50%);
+    transform: translateY(-2px) scale(1.05);
+  }
+
+  .leaves__img {
+    margin-top: 70px;
+  }
+  
+  .map__title {
+    font-size: 40px;
+    padding-top: 86px;
+    padding-bottom: 16px;
+  }
+
+  .cards__title{
+    font-size: 40px;
+  }
+
+  .cards__header {
+    margin-top: 40px;
+  }
+
+  .casta_btn > a {
+    font-weight: 700;
+    font-size: 3vh;
+  }
+
+  .casta_btn {
+    width: 16vw;
+    height: 8vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+
+  .space {
+    display: none;
+  }
+
 }
 
 .intro__title {
-  position: absolute;
-  padding-top: 140px;
-  padding-left: 6.154%;
-  padding-right: 26.667%;
   font-family: "Drakkar";
-  font-size: 24px;
-  text-shadow: 1px 0 8px white;
-  margin-bottom: 32px;
-  z-index: 2;
 }
-
-.intro__text {
-  display: none;
-}
-
 /* Intro styles end */
 
 /* Info styles start */
 
+.info {
+  background: url(../images/leraImages/Vector.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
 
 .info__title {
-  color: #0a0775;
   font-family: Drakkar;
-  font-size: 20px;
-  font-weight: 700;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .info__text {
-  margin-left: 7.436%;
-  margin-right: 7.436%;
-  color: #0a0775;
   text-align: center;
-  margin-bottom: 16px;
 }
 
 .info__button {
-  width: 280px;
-  height: 80px;
   flex-shrink: 0;
   border-radius: 40px;
   border: none;
@@ -110,69 +176,60 @@ body {
   transition: transform 0.5s ease-out;
 }
 
-.button__img{
-   position: relative;
-    display: block;
-    width: 100%;
-    height: 154px;
-    object-fit: cover;
-    object-position: top;
-    z-index: 1;
-}
-
-.info__button {
-  position: absolute;
-  z-index: 2;
-  height: 39.95px;
-  width: 35.641%;
-  margin-left: 32.051%;
-  margin-right: 32.051%;
-  margin-top: 57px;
-}
-
 .info__button a {
-  font-weight: 700;
   color: #fff;
-  font-family: "Advent Pro ExtraExpanded";
+  font-family: Advent Pro ExtraExpanded;
   font-style: normal;
   line-height: normal;
   text-decoration: none;
-  font-size: 12px;
-}
-
-.info__img {
-  display: none;
 }
 
 /* Info styles end */
 
 /* Bottom styles start */
 
-.map{
-  overflow: hidden;
+.bottom {
+  height: 100%;
+  position: relative;
+  top: -50px;
+  z-index: 1;
+}
+
+.map__block {
+  align-items: center;
+  display: grid;
+  justify-content: space-between;
+  overflow:hidden;
+  width: 100vw;
 }
 
 .leaves__img {
-  width: 39%;
+  width: 100%;
   height: auto;
-  margin-top: 70px;
 }
+
 .leaves_right {
-  transform: scale(-1, 1);
+  grid-area: 1/3;
 }
+
+.leaves_left {
+  grid-area: 1/1;
+}
+
 .map__title {
+  grid-area: 1/2;
   color: #0a0775;
   text-align: center;
   font-family: Drakkar;
-  font-size: 20px;
-  font-weight: 700;
-  padding-top: 10px;
-  margin-bottom: 10px;
+}
+
+.map {
+  position: relative;
 }
 
 .map__img {
-  margin-left: -1px;
-  width: 101%;
+  margin: 0 auto;
+  width: 100%;
   height: auto;
   display: block;
   filter: brightness(100%); /* Затемнення за замовчуванням */
@@ -203,6 +260,7 @@ body {
   opacity: 1;
   transition: opacity 0.5s ease 0.2s; /* Додано затримку для анімації тексту та кнопки */
 }
+
 /*Casta styles start*/
 .cards {
   display: flex;
@@ -210,23 +268,32 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .cards__header {
   align-items: center;
-  display: flex;
+  display: grid;
   justify-content: space-between;
-  margin-top: 16px;
+  overflow: hidden;
+  width: 100vw;
 }
 .cards__title {
+  grid-area: 1/2;
   color: #0a0775;
   text-align: center;
-  font-family: "Drakkar";
-  font-size: 20px;
-  font-weight: 700;
+  font-family: Drakkar;
 }
 
 .cards__img {
-  width: 39%;
+  width: 100%;
   height: auto;
+}
+
+.cards__img__right{
+  grid-area: 1/3;
+}
+
+.cards__img__left{
+  grid-area: 1/1;
 }
 
 .casta {
@@ -245,6 +312,10 @@ body {
   transition: all 400ms;
 }
 
+.container:hover .box {
+  filter: brightness(25%);
+}
+
 .box {
   position: relative;
   background: var(--img) center center;
@@ -255,6 +326,11 @@ body {
   align-items: center;
   font-family: Drakkar;
   font-size: 3vh;
+}
+
+.container .box:hover {
+  filter: grayscale(0%) opacity(100%);
+  cursor: pointer;
 }
 
 .container:has(.box-1:hover) {
@@ -298,339 +374,249 @@ body {
   transition: all 150ms;
 }
 
+.box:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 400ms;
+}
+
 .casta_btn {
-  width: 16vw;
-  height: 8vh;
-  margin-top: 4vh;
   border-radius: 32px;
   background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4vh;
 }
 
 .casta_btn > a {
-  font-weight: 700;
   color: #fff;
   font-family: Advent Pro ExtraExpanded;
-  font-size: 8px;
   font-style: normal;
   line-height: normal;
   text-decoration: none;
 }
 
+.casta_btn:hover {
+  background-color: #1b8484;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
 /*Casta styles end*/
-/*----------------------ПК--------------------*/
-@media (min-width: 390px) {
 
-  body {
-    position: relative;
-    font-family: "Advent Pro ExtraExpanded";
-    font-style: normal;
-    font-size: 24px;
-    line-height: normal;
-    font-weight: 400;
-    color: #fff;
-    background: url(../images/leraImages/AGED_PAPER\ 1.png) no-repeat center;
-    background-size: cover;
+@media (min-width: 390px) and (max-width: 1024px) {
+  .mob__info{
+    display: none;
   }
-  /* Intro styles start */
 
-  .intro__img {
-    display:  none;
-  }
-  .section {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
   .intro {
-    height: 120vh;
-    background: url(../images/leraImages/kingdom.png) no-repeat center;
-    background-size: cover;
+    height: 540px;
   }
-  
+
   .intro__title {
-    padding-top: 400px;
-    padding-left: 57px;
+    padding-top: 312px;
+    padding-left: 2.878%;
     font-family: "Drakkar";
-    font-size: 8vh;
-    text-shadow: 1px 0 8px white;
-    margin-bottom: 32px;
+    font-size: 32px;
+    margin-bottom: 4px;
   }
   
   .intro__text {
-    position: relative;
-    color: #FFF;
-    display: block;
-    font-size: 4vh;
+    font-size: 16px;
     font-weight: 500;
-    padding-left: 57px;
+    padding-left: 2.878%;
   }
-  
-  /* Intro styles end */
-  
-  /* Info styles start */
-  
+
   .info {
-    height: 732px;
-    background: url(../images/leraImages/Vector.png) no-repeat center;
-    background-size: cover;
+    height: 350px;
     margin-top: -52px;
-    position: relative;
-    z-index: 2;
   }
-  
+
   .info__title {
-    font-family: Drakkar;
-    font-size: 48px;
-    padding-top: 304px;
-    text-align: center;
-    margin-bottom: 24px;
-    color: #FFF;
+    display: block;
+    font-size: 24px;
+    padding-top: 79.88px;
+    margin-bottom: 15.92px;
   }
   
   .info__text {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #FFF;
+    display: block;
+    width: 49%;
+    margin-left: 25.5%;
+    font-size: 16px;
+    margin-bottom: 23.93px;
   }
   
   .info__button {
-    width: 280px;
-    height: 80px;
-    flex-shrink: 0;
-    border-radius: 40px;
-    border: none;
-    background: rgba(38, 189, 189, 0.5);
-    margin: 0 auto;
-    display: block;
-    transition: transform 0.5s ease-out;
-
+    width: 139px;
+    height: 39.95px;
   }
   
   .info__button a {
     font-weight: 700;
-    color: #fff;
-    font-family: Advent Pro ExtraExpanded;
-    font-size: 24px;
-    font-style: normal;
-    line-height: normal;
-    text-decoration: none;
+    font-size: 12px;
   }
-  
-  .info__button:hover {
-    background: rgb(159 224 224 / 50%);
-    transform: translateY(-2px) scale(1.05);
-  }
-  
-  /* Info styles end */
-  
-  /* Bottom styles start */
-  
-  .bottom {
-    height: 100%;
-  
-    position: relative;
-    top: -50px;
-    z-index: 1;
-  }
-  
-  .map__block {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-  
+
   .leaves__img {
-    width: 39%;
-    height: auto;
-    margin-top: 70px;
+    margin-top: 60px;
   }
-  .leaves_right {
-    transform: scale(-1, 1);
-  }
+  
   .map__title {
-    color: #0a0775;
-    text-align: center;
-    font-family: Drakkar;
-    font-size: 40px;
-    padding-top: 86px;
-    padding-bottom: 86px;
-    margin-bottom: -70px;
+    font-size: 20px;
+    padding-top: 75px;
+    padding-bottom: 16px;
   }
-  
-  .map {
-    position: relative;
+
+  .cards__title{
+    font-size: 20px;
   }
-  
-  .map__img {
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    display: block;
-    filter: brightness(100%); /* Затемнення за замовчуванням */
-    transition: filter 0.5s ease; /* Додано транзицію для затемнення */
-  }
-  
-  .hidden_map_elements {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-  
-  .map_head {
-    font-family: Drakkar;
-    font-size: 48px;
-    text-align: center;
-    margin-bottom: 2vh;
-  }
-  .map__img:hover {
-    filter: brightness(70%);
-  }
-  
-  .map__img:hover ~ .hidden_map_elements {
-    opacity: 1;
-    transition: opacity 0.5s ease 0.2s; /* Додано затримку для анімації тексту та кнопки */
-  }
-  /*Casta styles start*/
-  .cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+
   .cards__header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 15px;
   }
-  .cards__title {
-    color: #0a0775;
-    text-align: center;
-    font-family: Drakkar;
-    font-size: 40px;
-  }
-  
-  .cards__img {
-    width: 39%;
-    height: auto;
-  }
-  
-  .casta {
-    margin-top: 2vh;
-    box-sizing: border-box;
-    display: grid;
-    place-content: center;
-  }
-  .container {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 1em;
-    width: 95vw;
-    height: 440px;
-    transition: all 400ms;
-  }
-  
-  .container:hover .box {
-    filter: brightness(25%);
-  }
-  
-  .box {
-    position: relative;
-    background: var(--img) center center;
-    background-size: cover;
-    transition: all 200ms;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Drakkar;
-    font-size: 3vh;
-  }
-  
-  .container .box:hover {
-    filter: grayscale(0%) opacity(100%);
-    cursor: pointer;
-  }
-  
-  .container:has(.box-1:hover) {
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-  
-  .container:has(.box-2:hover) {
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
-  }
-  
-  .container:has(.box-3:hover) {
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
-  }
-  
-  .container:has(.box-4:hover) {
-    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
-  }
-  
-  .container:has(.box-5:hover) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr;
-  }
-  
-  .container:has(.box-6:hover) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
-  }
-  
-  .container:has(.box-7:hover) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
-  }
-  
-  .box::after {
-    content: attr(data-text);
-    position: absolute;
-    bottom: 20px;
-    background: #000;
-    color: #fff;
-    padding: 10px 10px 10px 14px;
-    letter-spacing: 4px;
-    transform: translateY(60px);
-    opacity: 0;
-    transition: all 150ms;
-  }
-  
-  .box:hover::after {
-    transform: translateY(0);
-    opacity: 1;
-    transition-delay: 400ms;
-  }
-  
-  .casta_btn {
-    width: 16vw;
-    height: 8vh;
-    margin-top: 4vh;
-    border-radius: 32px;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 4vh;
-  }
-  
+
   .casta_btn > a {
     font-weight: 700;
-    color: #fff;
-    font-family: Advent Pro ExtraExpanded;
-    font-size: 3vh;
-    font-style: normal;
-    line-height: normal;
-    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .casta_btn {
+    width: 40vw;
+    height: 8vh;
+    margin-top: 10vh;
+    margin-bottom: 15px;
+  }
+
+  .cards {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+
+  .cards {
+    display: none;
+  }
+
+  .intro {
+    height: 300px;
+  }
+
+  .intro__title {
+    padding-top: 230px;
+    padding-left: 6.154%;
+    font-family: "Drakkar";
+    font-size: 24px;
+    margin-bottom: 4px;
   }
   
-  .casta_btn:hover {
-    background-color: #1b8484;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  .intro__text {
+    display: none;
   }
-  /*Casta styles end*/
+
+  .info {
+    margin-top: 0px;
+    height: 154px;
+  }
+
+  .info__title__mob {
+    font-weight: 700;
+    color: #0A0775;
+    font-family: Drakkar;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 16px;
+    margin-bottom: 10px;
+
+  }
+  
+  .info__text__mob {
+    color: #0A0775;
+    text-align: center;
+    width: 85%;
+    margin-left: 7.5%;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .mob__info__header {
+    align-items: center;
+    display: grid;
+    justify-content: space-between;
+    overflow:hidden;
+    width: 100vw;
+  }
+  
+  .leaves__img__mob {
+    width: 100%;
+    height: auto;
+  }
+  
+  .leaves_right__mob {
+    grid-area: 1/3;
+  }
+  
+  .leaves_left__mob {
+    grid-area: 1/1;
+  }
+
+  .info__title__mob {
+    grid-area: 1/2;
+  }
+  
+
+
+  .info__title {
+    display: none;
+  }
+  
+  .info__text {
+    display: none;
+  }
+
+  .space {
+    height: 57px;
+  }
+  
+  .info__button {
+    width: 139px;
+    height: 39.95px;
+  }
+  
+  .info__button a {
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .leaves__img {
+    margin-top: 60px;
+  }
+  
+  .map__title {
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 75px;
+    padding-bottom: 16px;
+  }
+
+  .cards__title{
+    font-size: 20px;
+  }
+
+  .cards__header {
+    margin-top: 15px;
+  }
+
+  .casta_btn > a {
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .casta_btn {
+    width: 40vw;
+    height: 8vh;
+    margin-top: 10vh;
+    margin-bottom: 15px;
+  }
+
+  .cards {
+    display: none;
+  }
 }
